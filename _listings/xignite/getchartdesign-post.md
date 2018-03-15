@@ -1,12 +1,11 @@
 ---
 swagger: "2.0"
 info:
-  title: Xignite Statistics
-  description: Delivers and charts more than 1400 economical time-series fom the Federal
-    Reserve Bank.
+  title: Xignite Currencies
+  description: Provide real-time currency foreign exchange information and calculations.
   version: 1.0.0
-host: www.xignite.com
-basePath: xStatistics.json/XigniteStatistics
+host: www.xignite.com/xCurrencies.json
+basePath: /XigniteCurrencies
 schemes:
 - http
 produces:
@@ -17,7 +16,7 @@ paths:
   /GetChartDesign:
     post:
       summary: Get Chart Design
-      description: Returns the default design class for the statistics Chart
+      description: Returns the default design class for the currency Chart
       operationId: postGetchartdesign
       parameters:
       - in: body
@@ -39,242 +38,602 @@ definitions:
       Timestamp:
         description: This is a default description.
         type: post
-  GetCategoriesAndTopicsInput:
+  ListCurrenciesInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetCategoriesAndTopicsHeader:
+  ListCurrenciesHeader:
     properties: []
-  GetCategoriesAndTopicsOutput:
+  ListCurrenciesOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetCategoriesInput:
+  ListActiveCurrenciesInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetCategoriesHeader:
+  ListActiveCurrenciesHeader:
     properties: []
-  GetCategoriesOutput:
+  ListActiveCurrenciesOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetTopicsInput:
+  ListOfficialRatesInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetTopicsHeader:
+  ListOfficialRatesHeader:
     properties: []
-  GetTopicsOutput:
+  ListOfficialRatesOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetTopicDetailsInput:
+  GetUnitOfAccountInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetTopicDetailsHeader:
+  GetUnitOfAccountHeader:
     properties: []
-  GetTopicDetailsOutput:
+  GetUnitOfAccountOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetTopicStatisticsInput:
+  ConvertRealTimeValueInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetTopicStatisticsHeader:
+  ConvertRealTimeValueHeader:
     properties: []
-  GetTopicStatisticsOutput:
+  ConvertRealTimeValueOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetTopicDataInput:
+  ConvertHistoricalValueInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetTopicDataHeader:
+  ConvertHistoricalValueHeader:
     properties: []
-  GetTopicDataOutput:
+  ConvertHistoricalValueOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetLatestTopicDataInput:
+  GetRealTimeForwardRateInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetLatestTopicDataHeader:
+  GetRealTimeForwardRateHeader:
     properties: []
-  GetLatestTopicDataOutput:
+  GetRealTimeForwardRateOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetAnnualizedTopicDataInput:
+  GetRealTimeCrossRateAsStringInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetAnnualizedTopicDataHeader:
+  GetRealTimeCrossRateAsStringHeader:
     properties: []
-  GetAnnualizedTopicDataOutput:
+  GetRealTimeCrossRateAsStringOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetTopicChartInput:
+  GetLatestCrossRateInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetTopicChartHeader:
+  GetLatestCrossRateHeader:
     properties: []
-  GetTopicChartOutput:
+  GetLatestCrossRateOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetTopicChartPresetInput:
+  GetLatestCrossRatesInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetTopicChartPresetHeader:
+  GetLatestCrossRatesHeader:
     properties: []
-  GetTopicChartPresetOutput:
+  GetLatestCrossRatesOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetTopicChartCustomInput:
+  GetRealTimeCrossRateInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetTopicChartCustomHeader:
+  GetRealTimeCrossRateHeader:
     properties: []
-  GetTopicChartCustomOutput:
+  GetRealTimeCrossRateOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetTopicBinaryChartInput:
+  GetRealTimeCrossRateGMTInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetTopicBinaryChartHeader:
+  GetRealTimeCrossRateGMTHeader:
     properties: []
-  GetTopicBinaryChartOutput:
+  GetRealTimeCrossRateGMTOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetTopicBinaryChartPresetInput:
+  GetRawCrossRateInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetTopicBinaryChartPresetHeader:
+  GetRawCrossRateHeader:
     properties: []
-  GetTopicBinaryChartPresetOutput:
+  GetRawCrossRateOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetTopicBinaryChartCustomInput:
+  GetRawCrossRatesInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetTopicBinaryChartCustomHeader:
+  GetRawCrossRatesHeader:
     properties: []
-  GetTopicBinaryChartCustomOutput:
+  GetRawCrossRatesOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetChartUrlInput:
+  GetRealTimeCrossRatesInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetChartUrlHeader:
+  GetRealTimeCrossRatesHeader:
     properties: []
-  GetChartUrlOutput:
+  GetRealTimeCrossRatesOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetChartUrlPresetInput:
+  GetHistoricalCrossRateTablesInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetChartUrlPresetHeader:
+  GetHistoricalCrossRateTablesHeader:
     properties: []
-  GetChartUrlPresetOutput:
+  GetHistoricalCrossRateTablesOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetChartUrlCustomInput:
+  GetHistoricalCrossRateTablesBidAskInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetChartUrlCustomHeader:
+  GetHistoricalCrossRateTablesBidAskHeader:
     properties: []
-  GetChartUrlCustomOutput:
+  GetHistoricalCrossRateTablesBidAskOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetChartBinaryInput:
+  GetCurrencyReportInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetChartBinaryHeader:
+  GetCurrencyReportHeader:
     properties: []
-  GetChartBinaryOutput:
+  GetCurrencyReportOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetChartBinaryPresetInput:
+  GetHistoricalCrossRateTableInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetChartBinaryPresetHeader:
+  GetHistoricalCrossRateTableHeader:
     properties: []
-  GetChartBinaryPresetOutput:
+  GetHistoricalCrossRateTableOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetChartBinaryCustomInput:
+  GetHistoricalCrossRateTableBidAskInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetChartBinaryCustomHeader:
+  GetHistoricalCrossRateTableBidAskHeader:
     properties: []
-  GetChartBinaryCustomOutput:
+  GetHistoricalCrossRateTableBidAskOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetRealTimeCrossRateTableInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetRealTimeCrossRateTableHeader:
+    properties: []
+  GetRealTimeCrossRateTableOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetRealTimeCrossRateTableWithBidAskInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetRealTimeCrossRateTableWithBidAskHeader:
+    properties: []
+  GetRealTimeCrossRateTableWithBidAskOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetAllCrossRatesForACurrencyInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetAllCrossRatesForACurrencyHeader:
+    properties: []
+  GetAllCrossRatesForACurrencyOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetRealTimeCrossRateTableAsHTMLInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetRealTimeCrossRateTableAsHTMLHeader:
+    properties: []
+  GetRealTimeCrossRateTableAsHTMLOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetSimpleRealTimeCrossRateTableAsHTMLInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetSimpleRealTimeCrossRateTableAsHTMLHeader:
+    properties: []
+  GetSimpleRealTimeCrossRateTableAsHTMLOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetHistoricalCrossRateTableAsHTMLInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetHistoricalCrossRateTableAsHTMLHeader:
+    properties: []
+  GetHistoricalCrossRateTableAsHTMLOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetHistoricalCrossRateInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetHistoricalCrossRateHeader:
+    properties: []
+  GetHistoricalCrossRateOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetHistoricalCrossRatesInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetHistoricalCrossRatesHeader:
+    properties: []
+  GetHistoricalCrossRatesOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetHistoricalCrossRateBidAskInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetHistoricalCrossRateBidAskHeader:
+    properties: []
+  GetHistoricalCrossRateBidAskOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetHistoricalCrossRatesBidAskInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetHistoricalCrossRatesBidAskHeader:
+    properties: []
+  GetHistoricalCrossRatesBidAskOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetHistoricalCrossRatesRangeInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetHistoricalCrossRatesRangeHeader:
+    properties: []
+  GetHistoricalCrossRatesRangeOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetHistoricalCrossRatesBidAskRangeInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetHistoricalCrossRatesBidAskRangeHeader:
+    properties: []
+  GetHistoricalCrossRatesBidAskRangeOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetHistoricalCrossRatesAsOfInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetHistoricalCrossRatesAsOfHeader:
+    properties: []
+  GetHistoricalCrossRatesAsOfOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetHistoricalCrossRatesBidAskAsOfInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetHistoricalCrossRatesBidAskAsOfHeader:
+    properties: []
+  GetHistoricalCrossRatesBidAskAsOfOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetOfficialCrossRateInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetOfficialCrossRateHeader:
+    properties: []
+  GetOfficialCrossRateOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetOfficialCrossRatesInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetOfficialCrossRatesHeader:
+    properties: []
+  GetOfficialCrossRatesOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetOfficialCrossRateBidAskInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetOfficialCrossRateBidAskHeader:
+    properties: []
+  GetOfficialCrossRateBidAskOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetOfficialCrossRatesBidAskInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetOfficialCrossRatesBidAskHeader:
+    properties: []
+  GetOfficialCrossRatesBidAskOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetMutipleHistoricalCrossRatesInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetMutipleHistoricalCrossRatesHeader:
+    properties: []
+  GetMutipleHistoricalCrossRatesOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetAverageHistoricalCrossRatesInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetAverageHistoricalCrossRatesHeader:
+    properties: []
+  GetAverageHistoricalCrossRatesOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetAverageHistoricalCrossRateInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetAverageHistoricalCrossRateHeader:
+    properties: []
+  GetAverageHistoricalCrossRateOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetHistoricalMonthlyCrossRatesRangeInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetHistoricalMonthlyCrossRatesRangeHeader:
+    properties: []
+  GetHistoricalMonthlyCrossRatesRangeOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetCrossRateChangeInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetCrossRateChangeHeader:
+    properties: []
+  GetCrossRateChangeOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetCurrencyChartCustomInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetCurrencyChartCustomHeader:
+    properties: []
+  GetCurrencyChartCustomOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetCurrencyChartCustomBinaryInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetCurrencyChartCustomBinaryHeader:
+    properties: []
+  GetCurrencyChartCustomBinaryOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetCurrencyChartInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetCurrencyChartHeader:
+    properties: []
+  GetCurrencyChartOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetCurrencyChartBinaryInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetCurrencyChartBinaryHeader:
+    properties: []
+  GetCurrencyChartBinaryOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetCurrencyIntradayChartInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetCurrencyIntradayChartHeader:
+    properties: []
+  GetCurrencyIntradayChartOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetCurrencyIntradayChartCustomBinaryInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetCurrencyIntradayChartCustomBinaryHeader:
+    properties: []
+  GetCurrencyIntradayChartCustomBinaryOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetCurrencyIntradayChartCustomInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetCurrencyIntradayChartCustomHeader:
+    properties: []
+  GetCurrencyIntradayChartCustomOutput:
     properties:
       Envelope:
         description: This is a default description.
@@ -291,31 +650,186 @@ definitions:
       Envelope:
         description: This is a default description.
         type: post
-  GetCategoriesAndTopics_tns:
-    properties: []
-  GetCategoriesAndTopicsResponse_tns:
-    properties: []
-  GetCategories_tns:
-    properties: []
-  GetCategoriesResponse_tns:
-    properties: []
-  GetTopics_tns:
+  GetTickInput:
     properties:
-      CategoryCode:
+      Envelope:
         description: This is a default description.
         type: post
-  GetTopicsResponse_tns:
+  GetTickHeader:
     properties: []
-  GetTopicDetails_tns:
+  GetTickOutput:
     properties:
-      TopicCode:
+      Envelope:
         description: This is a default description.
         type: post
-  GetTopicDetailsResponse_tns:
-    properties: []
-  GetTopicStatistics_tns:
+  GetTicksInput:
     properties:
-      TopicCode:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetTicksHeader:
+    properties: []
+  GetTicksOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetHistoricalTicksInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetHistoricalTicksHeader:
+    properties: []
+  GetHistoricalTicksOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetHistoricalHighLowInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetHistoricalHighLowHeader:
+    properties: []
+  GetHistoricalHighLowOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetIntradayHighLowInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetIntradayHighLowHeader:
+    properties: []
+  GetIntradayHighLowOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  ListCurrencies_tns:
+    properties: []
+  ListCurrenciesResponse_tns:
+    properties: []
+  ListActiveCurrencies_tns:
+    properties: []
+  ListActiveCurrenciesResponse_tns:
+    properties: []
+  ListOfficialRates_tns:
+    properties: []
+  ListOfficialRatesResponse_tns:
+    properties: []
+  GetUnitOfAccount_tns:
+    properties:
+      Currency:
+        description: This is a default description.
+        type: post
+      AsOfDate:
+        description: This is a default description.
+        type: post
+  GetUnitOfAccountResponse_tns:
+    properties: []
+  ConvertRealTimeValue_tns:
+    properties:
+      From:
+        description: This is a default description.
+        type: post
+      To:
+        description: This is a default description.
+        type: post
+      Amount:
+        description: This is a default description.
+        type: post
+  ConvertRealTimeValueResponse_tns:
+    properties: []
+  ConvertHistoricalValue_tns:
+    properties:
+      From:
+        description: This is a default description.
+        type: post
+      To:
+        description: This is a default description.
+        type: post
+      AsOfDate:
+        description: This is a default description.
+        type: post
+      Amount:
+        description: This is a default description.
+        type: post
+  ConvertHistoricalValueResponse_tns:
+    properties: []
+  GetRealTimeForwardRate_tns:
+    properties:
+      From:
+        description: This is a default description.
+        type: post
+      To:
+        description: This is a default description.
+        type: post
+  GetRealTimeForwardRateResponse_tns:
+    properties: []
+  GetRealTimeCrossRateAsString_tns:
+    properties:
+      From:
+        description: This is a default description.
+        type: post
+      To:
+        description: This is a default description.
+        type: post
+  GetRealTimeCrossRateAsStringResponse_tns:
+    properties: []
+  GetLatestCrossRate_tns:
+    properties:
+      From:
+        description: This is a default description.
+        type: post
+      To:
+        description: This is a default description.
+        type: post
+  GetLatestCrossRateResponse_tns:
+    properties: []
+  GetLatestCrossRates_tns:
+    properties:
+      From:
+        description: This is a default description.
+        type: post
+      Tos:
+        description: This is a default description.
+        type: post
+  GetLatestCrossRatesResponse_tns:
+    properties: []
+  GetRealTimeCrossRate_tns:
+    properties: []
+  GetRealTimeCrossRateResponse_tns:
+    properties: []
+  GetRealTimeCrossRateGMT_tns:
+    properties: []
+  GetRealTimeCrossRateGMTResponse_tns:
+    properties: []
+  GetRawCrossRate_tns:
+    properties: []
+  GetRawCrossRateResponse_tns:
+    properties: []
+  GetRawCrossRates_tns:
+    properties:
+      Symbols:
+        description: This is a default description.
+        type: post
+  GetRawCrossRatesResponse_tns:
+    properties: []
+  GetRealTimeCrossRates_tns:
+    properties:
+      Symbols:
+        description: This is a default description.
+        type: post
+  GetRealTimeCrossRatesResponse_tns:
+    properties: []
+  GetHistoricalCrossRateTables_tns:
+    properties:
+      Symbols:
         description: This is a default description.
         type: post
       StartDate:
@@ -324,11 +838,11 @@ definitions:
       EndDate:
         description: This is a default description.
         type: post
-  GetTopicStatisticsResponse_tns:
+  GetHistoricalCrossRateTablesResponse_tns:
     properties: []
-  GetTopicData_tns:
+  GetHistoricalCrossRateTablesBidAsk_tns:
     properties:
-      TopicCode:
+      Symbols:
         description: This is a default description.
         type: post
       StartDate:
@@ -337,18 +851,14 @@ definitions:
       EndDate:
         description: This is a default description.
         type: post
-  GetTopicDataResponse_tns:
+  GetHistoricalCrossRateTablesBidAskResponse_tns:
     properties: []
-  GetLatestTopicData_tns:
+  GetCurrencyReport_tns:
     properties:
-      TopicCode:
+      From:
         description: This is a default description.
         type: post
-  GetLatestTopicDataResponse_tns:
-    properties: []
-  GetAnnualizedTopicData_tns:
-    properties:
-      TopicCode:
+      To:
         description: This is a default description.
         type: post
       StartDate:
@@ -357,11 +867,143 @@ definitions:
       EndDate:
         description: This is a default description.
         type: post
-  GetAnnualizedTopicDataResponse_tns:
+  GetCurrencyReportResponse_tns:
     properties: []
-  GetTopicChart_tns:
+  GetHistoricalCrossRateTable_tns:
     properties:
-      TopicCode:
+      Symbols:
+        description: This is a default description.
+        type: post
+      AsOfDate:
+        description: This is a default description.
+        type: post
+  GetHistoricalCrossRateTableResponse_tns:
+    properties: []
+  GetHistoricalCrossRateTableBidAsk_tns:
+    properties:
+      Symbols:
+        description: This is a default description.
+        type: post
+      AsOfDate:
+        description: This is a default description.
+        type: post
+  GetHistoricalCrossRateTableBidAskResponse_tns:
+    properties: []
+  GetRealTimeCrossRateTable_tns:
+    properties:
+      Symbols:
+        description: This is a default description.
+        type: post
+  GetRealTimeCrossRateTableResponse_tns:
+    properties: []
+  GetRealTimeCrossRateTableWithBidAsk_tns:
+    properties:
+      Symbols:
+        description: This is a default description.
+        type: post
+  GetRealTimeCrossRateTableWithBidAskResponse_tns:
+    properties: []
+  GetAllCrossRatesForACurrency_tns:
+    properties:
+      Symbol:
+        description: This is a default description.
+        type: post
+  GetAllCrossRatesForACurrencyResponse_tns:
+    properties: []
+  GetRealTimeCrossRateTableAsHTML_tns:
+    properties:
+      Symbols:
+        description: This is a default description.
+        type: post
+      ColumnHeaderStyle:
+        description: This is a default description.
+        type: post
+      LineHeaderStyle:
+        description: This is a default description.
+        type: post
+      CellStyle:
+        description: This is a default description.
+        type: post
+  GetRealTimeCrossRateTableAsHTMLResponse_tns:
+    properties: []
+  GetSimpleRealTimeCrossRateTableAsHTML_tns:
+    properties:
+      Symbols:
+        description: This is a default description.
+        type: post
+      ColumnHeaderStyle:
+        description: This is a default description.
+        type: post
+      LineHeaderStyle:
+        description: This is a default description.
+        type: post
+      CellStyle:
+        description: This is a default description.
+        type: post
+  GetSimpleRealTimeCrossRateTableAsHTMLResponse_tns:
+    properties: []
+  GetHistoricalCrossRateTableAsHTML_tns:
+    properties:
+      Symbols:
+        description: This is a default description.
+        type: post
+      AsOfDate:
+        description: This is a default description.
+        type: post
+      ColumnHeaderStyle:
+        description: This is a default description.
+        type: post
+      LineHeaderStyle:
+        description: This is a default description.
+        type: post
+      CellStyle:
+        description: This is a default description.
+        type: post
+  GetHistoricalCrossRateTableAsHTMLResponse_tns:
+    properties: []
+  GetHistoricalCrossRate_tns:
+    properties:
+      Symbol:
+        description: This is a default description.
+        type: post
+      AsOfDate:
+        description: This is a default description.
+        type: post
+  GetHistoricalCrossRateResponse_tns:
+    properties: []
+  GetHistoricalCrossRates_tns:
+    properties:
+      Symbols:
+        description: This is a default description.
+        type: post
+      AsOfDate:
+        description: This is a default description.
+        type: post
+  GetHistoricalCrossRatesResponse_tns:
+    properties: []
+  GetHistoricalCrossRateBidAsk_tns:
+    properties:
+      Symbol:
+        description: This is a default description.
+        type: post
+      AsOfDate:
+        description: This is a default description.
+        type: post
+  GetHistoricalCrossRateBidAskResponse_tns:
+    properties: []
+  GetHistoricalCrossRatesBidAsk_tns:
+    properties:
+      Symbols:
+        description: This is a default description.
+        type: post
+      AsOfDate:
+        description: This is a default description.
+        type: post
+  GetHistoricalCrossRatesBidAskResponse_tns:
+    properties: []
+  GetHistoricalCrossRatesRange_tns:
+    properties:
+      Symbol:
         description: This is a default description.
         type: post
       StartDate:
@@ -370,17 +1012,11 @@ definitions:
       EndDate:
         description: This is a default description.
         type: post
-      ChartWidth:
-        description: This is a default description.
-        type: post
-      ChartHeight:
-        description: This is a default description.
-        type: post
-  GetTopicChartResponse_tns:
+  GetHistoricalCrossRatesRangeResponse_tns:
     properties: []
-  GetTopicChartPreset_tns:
+  GetHistoricalCrossRatesBidAskRange_tns:
     properties:
-      TopicCode:
+      Symbol:
         description: This is a default description.
         type: post
       StartDate:
@@ -389,20 +1025,81 @@ definitions:
       EndDate:
         description: This is a default description.
         type: post
-      ChartWidth:
-        description: This is a default description.
-        type: post
-      ChartHeight:
-        description: This is a default description.
-        type: post
-      Preset:
-        description: This is a default description.
-        type: post
-  GetTopicChartPresetResponse_tns:
+  GetHistoricalCrossRatesBidAskRangeResponse_tns:
     properties: []
-  GetTopicChartCustom_tns:
+  GetHistoricalCrossRatesAsOf_tns:
     properties:
-      TopicCode:
+      Symbol:
+        description: This is a default description.
+        type: post
+      EndDate:
+        description: This is a default description.
+        type: post
+      Periods:
+        description: This is a default description.
+        type: post
+  GetHistoricalCrossRatesAsOfResponse_tns:
+    properties: []
+  GetHistoricalCrossRatesBidAskAsOf_tns:
+    properties:
+      Symbol:
+        description: This is a default description.
+        type: post
+      EndDate:
+        description: This is a default description.
+        type: post
+      Periods:
+        description: This is a default description.
+        type: post
+  GetHistoricalCrossRatesBidAskAsOfResponse_tns:
+    properties: []
+  GetOfficialCrossRate_tns:
+    properties:
+      AsOfDate:
+        description: This is a default description.
+        type: post
+  GetOfficialCrossRateResponse_tns:
+    properties: []
+  GetOfficialCrossRates_tns:
+    properties:
+      Symbols:
+        description: This is a default description.
+        type: post
+      AsOfDate:
+        description: This is a default description.
+        type: post
+  GetOfficialCrossRatesResponse_tns:
+    properties: []
+  GetOfficialCrossRateBidAsk_tns:
+    properties:
+      AsOfDate:
+        description: This is a default description.
+        type: post
+  GetOfficialCrossRateBidAskResponse_tns:
+    properties: []
+  GetOfficialCrossRatesBidAsk_tns:
+    properties:
+      Symbols:
+        description: This is a default description.
+        type: post
+      AsOfDate:
+        description: This is a default description.
+        type: post
+  GetOfficialCrossRatesBidAskResponse_tns:
+    properties: []
+  GetMutipleHistoricalCrossRates_tns:
+    properties:
+      Symbols:
+        description: This is a default description.
+        type: post
+      AsOfDate:
+        description: This is a default description.
+        type: post
+  GetMutipleHistoricalCrossRatesResponse_tns:
+    properties: []
+  GetAverageHistoricalCrossRates_tns:
+    properties:
+      Symbols:
         description: This is a default description.
         type: post
       StartDate:
@@ -411,259 +1108,17 @@ definitions:
       EndDate:
         description: This is a default description.
         type: post
-      ChartWidth:
-        description: This is a default description.
-        type: post
-      ChartHeight:
-        description: This is a default description.
-        type: post
-  GetTopicChartCustomResponse_tns:
+  GetAverageHistoricalCrossRatesResponse_tns:
     properties: []
-  GetTopicBinaryChart_tns:
+  GetAverageHistoricalCrossRate_tns:
     properties:
-      TopicCode:
+      Symbol:
         description: This is a default description.
         type: post
       StartDate:
         description: This is a default description.
         type: post
       EndDate:
-        description: This is a default description.
-        type: post
-      ChartWidth:
-        description: This is a default description.
-        type: post
-      ChartHeight:
-        description: This is a default description.
-        type: post
-      Preset:
-        description: This is a default description.
-        type: post
-  GetTopicBinaryChartResponse_tns:
-    properties: []
-  GetTopicBinaryChartPreset_tns:
-    properties:
-      TopicCode:
-        description: This is a default description.
-        type: post
-      StartDate:
-        description: This is a default description.
-        type: post
-      EndDate:
-        description: This is a default description.
-        type: post
-      ChartWidth:
-        description: This is a default description.
-        type: post
-      ChartHeight:
-        description: This is a default description.
-        type: post
-      Preset:
-        description: This is a default description.
-        type: post
-  GetTopicBinaryChartPresetResponse_tns:
-    properties: []
-  GetTopicBinaryChartCustom_tns:
-    properties:
-      TopicCode:
-        description: This is a default description.
-        type: post
-      StartDate:
-        description: This is a default description.
-        type: post
-      EndDate:
-        description: This is a default description.
-        type: post
-      ChartWidth:
-        description: This is a default description.
-        type: post
-      ChartHeight:
-        description: This is a default description.
-        type: post
-  GetTopicBinaryChartCustomResponse_tns:
-    properties: []
-  GetChartUrl_tns:
-    properties:
-      TopicCode:
-        description: This is a default description.
-        type: post
-      StartDate:
-        description: This is a default description.
-        type: post
-      EndDate:
-        description: This is a default description.
-        type: post
-      ChartWidth:
-        description: This is a default description.
-        type: post
-      ChartHeight:
-        description: This is a default description.
-        type: post
-  GetChartUrlResponse_tns:
-    properties: []
-  GetChartUrlPreset_tns:
-    properties:
-      TopicCode:
-        description: This is a default description.
-        type: post
-      StartDate:
-        description: This is a default description.
-        type: post
-      EndDate:
-        description: This is a default description.
-        type: post
-      ChartWidth:
-        description: This is a default description.
-        type: post
-      ChartHeight:
-        description: This is a default description.
-        type: post
-      Preset:
-        description: This is a default description.
-        type: post
-  GetChartUrlPresetResponse_tns:
-    properties: []
-  GetChartUrlCustom_tns:
-    properties:
-      TopicCode:
-        description: This is a default description.
-        type: post
-      StartDate:
-        description: This is a default description.
-        type: post
-      EndDate:
-        description: This is a default description.
-        type: post
-      ChartWidth:
-        description: This is a default description.
-        type: post
-      ChartHeight:
-        description: This is a default description.
-        type: post
-  GetChartUrlCustomResponse_tns:
-    properties: []
-  GetChartBinary_tns:
-    properties:
-      TopicCode:
-        description: This is a default description.
-        type: post
-      StartDate:
-        description: This is a default description.
-        type: post
-      EndDate:
-        description: This is a default description.
-        type: post
-      ChartWidth:
-        description: This is a default description.
-        type: post
-      ChartHeight:
-        description: This is a default description.
-        type: post
-  GetChartBinaryResponse_tns:
-    properties: []
-  GetChartBinaryPreset_tns:
-    properties:
-      TopicCode:
-        description: This is a default description.
-        type: post
-      StartDate:
-        description: This is a default description.
-        type: post
-      EndDate:
-        description: This is a default description.
-        type: post
-      ChartWidth:
-        description: This is a default description.
-        type: post
-      ChartHeight:
-        description: This is a default description.
-        type: post
-      Preset:
-        description: This is a default description.
-        type: post
-  GetChartBinaryPresetResponse_tns:
-    properties: []
-  GetChartBinaryCustom_tns:
-    properties:
-      TopicCode:
-        description: This is a default description.
-        type: post
-      StartDate:
-        description: This is a default description.
-        type: post
-      EndDate:
-        description: This is a default description.
-        type: post
-      ChartWidth:
-        description: This is a default description.
-        type: post
-      ChartHeight:
-        description: This is a default description.
-        type: post
-  GetChartBinaryCustomResponse_tns:
-    properties: []
-  GetChartDesign_tns:
-    properties: []
-  GetChartDesignResponse_tns:
-    properties: []
-  Header_tns:
-    properties:
-      Username:
-        description: This is a default description.
-        type: post
-      Password:
-        description: This is a default description.
-        type: post
-      Tracer:
-        description: This is a default description.
-        type: post
-      IHeader_Username:
-        description: This is a default description.
-        type: post
-      IHeader_Password:
-        description: This is a default description.
-        type: post
-      IHeader_Tracer:
-        description: This is a default description.
-        type: post
-  ArrayOfCategory_tns:
-    properties:
-      Category:
-        description: This is a default description.
-        type: post
-  Common_tns:
-    properties:
-      Message:
-        description: This is a default description.
-        type: post
-      Identity:
-        description: This is a default description.
-        type: post
-      Delay:
-        description: This is a default description.
-        type: post
-  ArrayOfTopic_tns:
-    properties:
-      Topic:
-        description: This is a default description.
-        type: post
-  ArrayOfSeriesData_tns:
-    properties:
-      SeriesData:
-        description: This is a default description.
-        type: post
-  SeriesData_tns:
-    properties:
-      Date:
-        description: This is a default description.
-        type: post
-      Value:
-        description: This is a default description.
-        type: post
-      Change:
-        description: This is a default description.
-        type: post
-      PercentChange:
         description: This is a default description.
         type: post
 x-collection-name: Xignite
