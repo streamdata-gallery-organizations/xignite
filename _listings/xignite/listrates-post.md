@@ -1,11 +1,11 @@
 ---
 swagger: "2.0"
 info:
-  title: Xignite Money Markets
-  description: Provide information about money market derivatives.
+  title: Xignite InterBanks
+  description: Provide information about global interbank interest rates.
   version: 1.0.0
 host: www.xignite.com
-basePath: xMoneyMarkets.json/XigniteMoneyMarkets
+basePath: xInterBanks.json/XigniteInterBanks
 schemes:
 - http
 produces:
@@ -38,18 +38,6 @@ definitions:
       Timestamp:
         description: This is a default description.
         type: post
-  GetSwapRateInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetSwapRateHeader:
-    properties: []
-  GetSwapRateOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
   ListRatesInput:
     properties:
       Envelope:
@@ -74,202 +62,834 @@ definitions:
       Envelope:
         description: This is a default description.
         type: post
-  GetForwardRateAgreementInput:
+  GetLIBORSecureInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetForwardRateAgreementHeader:
+  GetLIBORSecureHeader:
     properties: []
-  GetForwardRateAgreementOutput:
+  GetLIBORSecureOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetEuroDollarFRAStripInput:
+  GetLIBORInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetEuroDollarFRAStripHeader:
+  GetLIBORHeader:
     properties: []
-  GetEuroDollarFRAStripOutput:
+  GetLIBOROutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetSwaptionInput:
+  GetREIBORInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetSwaptionHeader:
+  GetREIBORHeader:
     properties: []
-  GetSwaptionOutput:
+  GetREIBOROutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetSwaptionFamilyInput:
+  GetHIBORInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetSwaptionFamilyHeader:
+  GetHIBORHeader:
     properties: []
-  GetSwaptionFamilyOutput:
+  GetHIBOROutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetHistoricalSwaptionInput:
+  GetBUBORInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetHistoricalSwaptionHeader:
+  GetBUBORHeader:
     properties: []
-  GetHistoricalSwaptionOutput:
+  GetBUBOROutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetHistoricalSwaptionFamilyInput:
+  GetSOFIBORInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetHistoricalSwaptionFamilyHeader:
+  GetSOFIBORHeader:
     properties: []
-  GetHistoricalSwaptionFamilyOutput:
+  GetSOFIBOROutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetSwapRateFamilyInput:
+  GetREIBIDInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetSwapRateFamilyHeader:
+  GetREIBIDHeader:
     properties: []
-  GetSwapRateFamilyOutput:
+  GetREIBIDOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetHistoricalSwapRateInput:
+  GetOIBORInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetHistoricalSwapRateHeader:
+  GetOIBORHeader:
     properties: []
-  GetHistoricalSwapRateOutput:
+  GetOIBOROutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetHistoricalSwapRateRangeInput:
+  GetSIBORInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetHistoricalSwapRateRangeHeader:
+  GetSIBORHeader:
     properties: []
-  GetHistoricalSwapRateRangeOutput:
+  GetSIBOROutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetSwapRateExtendedInput:
+  GetCIBORInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetSwapRateExtendedHeader:
+  GetCIBORHeader:
     properties: []
-  GetSwapRateExtendedOutput:
+  GetCIBOROutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetSwapRateFamilyExtendedInput:
+  GetSTIBORInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetSwapRateFamilyExtendedHeader:
+  GetSTIBORHeader:
     properties: []
-  GetSwapRateFamilyExtendedOutput:
+  GetSTIBOROutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetHistoricalSwapRateExtendedInput:
+  GetWIBORInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetHistoricalSwapRateExtendedHeader:
+  GetWIBORHeader:
     properties: []
-  GetHistoricalSwapRateExtendedOutput:
+  GetWIBOROutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetHistoricalSwapRateExtendedRangeInput:
+  GetVILIBORInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetHistoricalSwapRateExtendedRangeHeader:
+  GetVILIBORHeader:
     properties: []
-  GetHistoricalSwapRateExtendedRangeOutput:
+  GetVILIBOROutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  ListSwapRatesInput:
+  GetEURIBORInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  ListSwapRatesHeader:
+  GetEURIBORHeader:
     properties: []
-  ListSwapRatesOutput:
+  GetEURIBOROutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetTreasuryRateInput:
+  GetPRIBORInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetTreasuryRateHeader:
+  GetPRIBORHeader:
     properties: []
-  GetTreasuryRateOutput:
+  GetPRIBOROutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetTreasuryRateFamilyInput:
+  GetKORIBORInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetTreasuryRateFamilyHeader:
+  GetKORIBORHeader:
     properties: []
-  GetTreasuryRateFamilyOutput:
+  GetKORIBOROutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetSwapRate_tns:
+  GetMIBORInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetMIBORHeader:
     properties: []
-  GetSwapRateResponse_tns:
+  GetMIBOROutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetMIBIDInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetMIBIDHeader:
     properties: []
+  GetMIBIDOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetSABORInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetSABORHeader:
+    properties: []
+  GetSABOROutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetTAIBORInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetTAIBORHeader:
+    properties: []
+  GetTAIBOROutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetTURKIBORInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetTURKIBORHeader:
+    properties: []
+  GetTURKIBOROutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetMEXIBORInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetMEXIBORHeader:
+    properties: []
+  GetMEXIBOROutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetTELBORInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetTELBORHeader:
+    properties: []
+  GetTELBOROutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetCHILIBORInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetCHILIBORHeader:
+    properties: []
+  GetCHILIBOROutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetCHIBORInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetCHIBORHeader:
+    properties: []
+  GetCHIBOROutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetCDORInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetCDORHeader:
+    properties: []
+  GetCDOROutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetKAIBORInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetKAIBORHeader:
+    properties: []
+  GetKAIBOROutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetKIBORInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetKIBORHeader:
+    properties: []
+  GetKIBOROutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetKIBIDInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetKIBIDHeader:
+    properties: []
+  GetKIBIDOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetSHIBORInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetSHIBORHeader:
+    properties: []
+  GetSHIBOROutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetJIBORInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetJIBORHeader:
+    properties: []
+  GetJIBOROutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetKLIBORInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetKLIBORHeader:
+    properties: []
+  GetKLIBOROutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetTIBORInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetTIBORHeader:
+    properties: []
+  GetTIBOROutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetPHIBORInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetPHIBORHeader:
+    properties: []
+  GetPHIBOROutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetBKIBORInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetBKIBORHeader:
+    properties: []
+  GetBKIBOROutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetVNIBORInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetVNIBORHeader:
+    properties: []
+  GetVNIBOROutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetMOSIBORInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetMOSIBORHeader:
+    properties: []
+  GetMOSIBOROutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetMOSIBIDInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetMOSIBIDHeader:
+    properties: []
+  GetMOSIBIDOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetHistoricalLIBORInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetHistoricalLIBORHeader:
+    properties: []
+  GetHistoricalLIBOROutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetBRAZIBORInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetBRAZIBORHeader:
+    properties: []
+  GetBRAZIBOROutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetTRLIBORInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetTRLIBORHeader:
+    properties: []
+  GetTRLIBOROutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetTRLIBIDInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetTRLIBIDHeader:
+    properties: []
+  GetTRLIBIDOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetBRIBORInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetBRIBORHeader:
+    properties: []
+  GetBRIBOROutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetBRIBIDInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetBRIBIDHeader:
+    properties: []
+  GetBRIBIDOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetRIGIBORInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetRIGIBORHeader:
+    properties: []
+  GetRIGIBOROutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetRIGIBIDInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetRIGIBIDHeader:
+    properties: []
+  GetRIGIBIDOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetAIDIBORInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetAIDIBORHeader:
+    properties: []
+  GetAIDIBOROutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetJIBARInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetJIBARHeader:
+    properties: []
+  GetJIBAROutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetBAIBORInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetBAIBORHeader:
+    properties: []
+  GetBAIBOROutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetCOLIBORInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetCOLIBORHeader:
+    properties: []
+  GetCOLIBOROutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetTALIBORInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetTALIBORHeader:
+    properties: []
+  GetTALIBOROutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetTALIBIDInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetTALIBIDHeader:
+    properties: []
+  GetTALIBIDOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetRateInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetRateHeader:
+    properties: []
+  GetRateOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetRateFamilyTableInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetRateFamilyTableHeader:
+    properties: []
+  GetRateFamilyTableOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetRateFamilyInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetRateFamilyHeader:
+    properties: []
+  GetRateFamilyOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetTodaysRateInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetTodaysRateHeader:
+    properties: []
+  GetTodaysRateOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetLatestRateInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetLatestRateHeader:
+    properties: []
+  GetLatestRateOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetLatestLIBORInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetLatestLIBORHeader:
+    properties: []
+  GetLatestLIBOROutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetLatestRateFamilyInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetLatestRateFamilyHeader:
+    properties: []
+  GetLatestRateFamilyOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetHistoricalRatesInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetHistoricalRatesHeader:
+    properties: []
+  GetHistoricalRatesOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetHistoricalRateFamilyInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetHistoricalRateFamilyHeader:
+    properties: []
+  GetHistoricalRateFamilyOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetRateDescriptionInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetRateDescriptionHeader:
+    properties: []
+  GetRateDescriptionOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  DrawRateChartCustomInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  DrawRateChartCustomHeader:
+    properties: []
+  DrawRateChartCustomOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  DrawRateChartInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  DrawRateChartHeader:
+    properties: []
+  DrawRateChartOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  DrawRateChartPresetInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  DrawRateChartPresetHeader:
+    properties: []
+  DrawRateChartPresetOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetChartDesignInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetChartDesignHeader:
+    properties: []
+  GetChartDesignOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  DrawYieldCurveInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  DrawYieldCurveHeader:
+    properties: []
+  DrawYieldCurveOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  DrawYieldCurvePresetInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  DrawYieldCurvePresetHeader:
+    properties: []
+  DrawYieldCurvePresetOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  DrawYieldCurveCustomInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  DrawYieldCurveCustomHeader:
+    properties: []
+  DrawYieldCurveCustomOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
   ListRates_tns:
     properties: []
   ListRatesResponse_tns:
@@ -281,202 +901,121 @@ definitions:
         type: post
   SearchRatesResponse_tns:
     properties: []
-  GetForwardRateAgreement_tns:
-    properties:
-      AsOfDate:
-        description: This is a default description.
-        type: post
-  GetForwardRateAgreementResponse_tns:
-    properties: []
-  GetEuroDollarFRAStrip_tns:
-    properties: []
-  GetEuroDollarFRAStripResponse_tns:
-    properties: []
-  GetSwaption_tns:
-    properties: []
-  GetSwaptionResponse_tns:
-    properties: []
-  GetSwaptionFamily_tns:
-    properties: []
-  GetSwaptionFamilyResponse_tns:
-    properties: []
-  GetHistoricalSwaption_tns:
-    properties:
-      AsOfDate:
-        description: This is a default description.
-        type: post
-  GetHistoricalSwaptionResponse_tns:
-    properties: []
-  GetHistoricalSwaptionFamily_tns:
-    properties:
-      AsOfDate:
-        description: This is a default description.
-        type: post
-  GetHistoricalSwaptionFamilyResponse_tns:
-    properties: []
-  GetSwapRateFamily_tns:
-    properties: []
-  GetSwapRateFamilyResponse_tns:
-    properties: []
-  GetHistoricalSwapRate_tns:
-    properties:
-      AsOfDate:
-        description: This is a default description.
-        type: post
-  GetHistoricalSwapRateResponse_tns:
-    properties: []
-  GetHistoricalSwapRateRange_tns:
-    properties:
-      StartDate:
-        description: This is a default description.
-        type: post
-      EndDate:
-        description: This is a default description.
-        type: post
-  GetHistoricalSwapRateRangeResponse_tns:
-    properties: []
-  GetSwapRateExtended_tns:
-    properties:
-      SwapType:
-        description: This is a default description.
-        type: post
-      Currency:
-        description: This is a default description.
-        type: post
-      Tenor:
-        description: This is a default description.
-        type: post
-  GetSwapRateExtendedResponse_tns:
-    properties: []
-  GetSwapRateFamilyExtended_tns:
-    properties:
-      SwapType:
-        description: This is a default description.
-        type: post
-      Currency:
-        description: This is a default description.
-        type: post
-  GetSwapRateFamilyExtendedResponse_tns:
-    properties: []
-  GetHistoricalSwapRateExtended_tns:
-    properties:
-      SwapType:
-        description: This is a default description.
-        type: post
-      Currency:
-        description: This is a default description.
-        type: post
-      Tenor:
-        description: This is a default description.
-        type: post
-      AsOfDate:
-        description: This is a default description.
-        type: post
-  GetHistoricalSwapRateExtendedResponse_tns:
-    properties: []
-  GetHistoricalSwapRateExtendedRange_tns:
-    properties:
-      SwapType:
-        description: This is a default description.
-        type: post
-      Currency:
-        description: This is a default description.
-        type: post
-      Tenor:
-        description: This is a default description.
-        type: post
-      StartDate:
-        description: This is a default description.
-        type: post
-      EndDate:
-        description: This is a default description.
-        type: post
-  GetHistoricalSwapRateExtendedRangeResponse_tns:
-    properties: []
-  ListSwapRates_tns:
-    properties:
-      SwapType:
-        description: This is a default description.
-        type: post
-      Currency:
-        description: This is a default description.
-        type: post
-  ListSwapRatesResponse_tns:
-    properties: []
-  GetTreasuryRate_tns:
-    properties: []
-  GetTreasuryRateResponse_tns:
-    properties: []
-  GetTreasuryRateFamily_tns:
-    properties: []
-  GetTreasuryRateFamilyResponse_tns:
-    properties: []
-  Header_tns:
+  GetLIBORSecure_tns:
     properties:
       Username:
         description: This is a default description.
         type: post
-      Password:
+      AsOfDate:
         description: This is a default description.
         type: post
-      Tracer:
-        description: This is a default description.
-        type: post
-      IHeader_Username:
-        description: This is a default description.
-        type: post
-      IHeader_Password:
-        description: This is a default description.
-        type: post
-      IHeader_Tracer:
-        description: This is a default description.
-        type: post
-  ArrayOfRateDescription_tns:
+  GetLIBORSecureResponse_tns:
+    properties: []
+  GetLIBOR_tns:
     properties:
-      RateDescription:
+      AsOfDate:
         description: This is a default description.
         type: post
-  ArrayOfEuroDollarFRA_tns:
+  GetLIBORResponse_tns:
+    properties: []
+  GetREIBOR_tns:
     properties:
-      EuroDollarFRA:
+      AsOfDate:
         description: This is a default description.
         type: post
-  ArrayOfSwaption_tns:
+  GetREIBORResponse_tns:
+    properties: []
+  GetHIBOR_tns:
     properties:
-      Swaption:
+      AsOfDate:
         description: This is a default description.
         type: post
-  ArrayOfSwapRate_tns:
+  GetHIBORResponse_tns:
+    properties: []
+  GetBUBOR_tns:
     properties:
-      SwapRate:
+      AsOfDate:
         description: This is a default description.
         type: post
-  ArrayOfSwapRateExtended_tns:
+  GetBUBORResponse_tns:
+    properties: []
+  GetSOFIBOR_tns:
     properties:
-      SwapRateExtended:
+      AsOfDate:
         description: This is a default description.
         type: post
-  ArrayOfSwapRateDescription_tns:
+  GetSOFIBORResponse_tns:
+    properties: []
+  GetREIBID_tns:
     properties:
-      SwapRateDescription:
+      AsOfDate:
         description: This is a default description.
         type: post
-  ArrayOfInterestRate_tns:
+  GetREIBIDResponse_tns:
+    properties: []
+  GetOIBOR_tns:
     properties:
-      InterestRate:
+      AsOfDate:
         description: This is a default description.
         type: post
-  Common_tns:
+  GetOIBORResponse_tns:
+    properties: []
+  GetSIBOR_tns:
     properties:
-      Message:
+      AsOfDate:
         description: This is a default description.
         type: post
-      Identity:
+  GetSIBORResponse_tns:
+    properties: []
+  GetCIBOR_tns:
+    properties:
+      AsOfDate:
         description: This is a default description.
         type: post
-      Delay:
+  GetCIBORResponse_tns:
+    properties: []
+  GetSTIBOR_tns:
+    properties:
+      AsOfDate:
         description: This is a default description.
         type: post
+  GetSTIBORResponse_tns:
+    properties: []
+  GetWIBOR_tns:
+    properties:
+      AsOfDate:
+        description: This is a default description.
+        type: post
+  GetWIBORResponse_tns:
+    properties: []
+  GetVILIBOR_tns:
+    properties:
+      AsOfDate:
+        description: This is a default description.
+        type: post
+  GetVILIBORResponse_tns:
+    properties: []
+  GetEURIBOR_tns:
+    properties:
+      AsOfDate:
+        description: This is a default description.
+        type: post
+  GetEURIBORResponse_tns:
+    properties: []
+  GetPRIBOR_tns:
+    properties:
+      AsOfDate:
+        description: This is a default description.
+        type: post
+  GetPRIBORResponse_tns:
+    properties: []
+  GetKORIBOR_tns:
+    properties:
+      AsOfDate:
+        description: This is a default description.
+        type: post
+  GetKORIBORResponse_tns:
+    properties: []
 x-collection-name: Xignite
 x-streamrank:
   polling_total_time_average: 0
