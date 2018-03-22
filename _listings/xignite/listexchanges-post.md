@@ -1,12 +1,11 @@
 ---
 swagger: "2.0"
 info:
-  title: Xignite Futures
-  description: Provide delayed and historical commodity quote information from supported
-    exchanges (NYMEX...).
+  title: Xignite Global Historical
+  description: On-demand global historical quotes.
   version: 1.0.0
 host: www.xignite.com
-basePath: xFutures.json/XigniteFutures
+basePath: xGlobalHistorical.json/XigniteGlobalHistorical
 schemes:
 - http
 produces:
@@ -17,8 +16,7 @@ paths:
   /ListExchanges:
     post:
       summary: List Exchanges
-      description: List commmodities future exchanges and indicates which ones are
-        supported
+      description: This operation returns exchanges information
       operationId: postListexchanges
       parameters:
       - in: body
@@ -40,62 +38,338 @@ definitions:
       Timestamp:
         description: This is a default description.
         type: post
-  GetFutureSymbolInput:
+  GetGlobalLastClosingPriceInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetFutureSymbolHeader:
+  GetGlobalLastClosingPriceHeader:
     properties: []
-  GetFutureSymbolOutput:
+  GetGlobalLastClosingPriceOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetReverseFutureSymbolInput:
+  GetGlobalLastClosingPricesInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetReverseFutureSymbolHeader:
+  GetGlobalLastClosingPricesHeader:
     properties: []
-  GetReverseFutureSymbolOutput:
+  GetGlobalLastClosingPricesOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetTerminationScheduleInput:
+  GetGlobalHistoricalQuoteInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetTerminationScheduleHeader:
+  GetGlobalHistoricalQuoteHeader:
     properties: []
-  GetTerminationScheduleOutput:
+  GetGlobalHistoricalQuoteOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetNextFutureInput:
+  GetEndOfDayQuoteInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetNextFutureHeader:
+  GetEndOfDayQuoteHeader:
     properties: []
-  GetNextFutureOutput:
+  GetEndOfDayQuoteOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetFutureInput:
+  GetEndOfDayQuotesInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetFutureHeader:
+  GetEndOfDayQuotesHeader:
     properties: []
-  GetFutureOutput:
+  GetEndOfDayQuotesOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetEndOfDayQuotesRangeInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetEndOfDayQuotesRangeHeader:
+    properties: []
+  GetEndOfDayQuotesRangeOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetGlobalHistoricalQuotesInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetGlobalHistoricalQuotesHeader:
+    properties: []
+  GetGlobalHistoricalQuotesOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetGlobalHistoricalQuotesAsOfInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetGlobalHistoricalQuotesAsOfHeader:
+    properties: []
+  GetGlobalHistoricalQuotesAsOfOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetGlobalHistoricalQuotesRangeInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetGlobalHistoricalQuotesRangeHeader:
+    properties: []
+  GetGlobalHistoricalQuotesRangeOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetGlobalHistoricalQuotesRangeExtendedInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetGlobalHistoricalQuotesRangeExtendedHeader:
+    properties: []
+  GetGlobalHistoricalQuotesRangeExtendedOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetGlobalHistoricalWeeklyQuotesRangeInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetGlobalHistoricalWeeklyQuotesRangeHeader:
+    properties: []
+  GetGlobalHistoricalWeeklyQuotesRangeOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetGlobalHistoricalWeeklyQuotesRangeExtendedInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetGlobalHistoricalWeeklyQuotesRangeExtendedHeader:
+    properties: []
+  GetGlobalHistoricalWeeklyQuotesRangeExtendedOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetGlobalHistoricalQuarterlyQuotesRangeInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetGlobalHistoricalQuarterlyQuotesRangeHeader:
+    properties: []
+  GetGlobalHistoricalQuarterlyQuotesRangeOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetGlobalHistoricalStatisticsInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetGlobalHistoricalStatisticsHeader:
+    properties: []
+  GetGlobalHistoricalStatisticsOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetGlobalHistoricalMonthlyQuotesRangeInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetGlobalHistoricalMonthlyQuotesRangeHeader:
+    properties: []
+  GetGlobalHistoricalMonthlyQuotesRangeOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetGlobalHistoricalMonthlyQuotesRangeExtendedInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetGlobalHistoricalMonthlyQuotesRangeExtendedHeader:
+    properties: []
+  GetGlobalHistoricalMonthlyQuotesRangeExtendedOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetTopMoversByExchangeInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetTopMoversByExchangeHeader:
+    properties: []
+  GetTopMoversByExchangeOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetTopGainersByExchangeInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetTopGainersByExchangeHeader:
+    properties: []
+  GetTopGainersByExchangeOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetTopLosersByExchangeInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetTopLosersByExchangeHeader:
+    properties: []
+  GetTopLosersByExchangeOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetAllSplitsByExchangeInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetAllSplitsByExchangeHeader:
+    properties: []
+  GetAllSplitsByExchangeOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetSplitRatioInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetSplitRatioHeader:
+    properties: []
+  GetSplitRatioOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetSplitHistoryInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetSplitHistoryHeader:
+    properties: []
+  GetSplitHistoryOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetAllCashDividendsByExchangeInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetAllCashDividendsByExchangeHeader:
+    properties: []
+  GetAllCashDividendsByExchangeOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetCashDividendTotalInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetCashDividendTotalHeader:
+    properties: []
+  GetCashDividendTotalOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetCashDividendHistoryInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetCashDividendHistoryHeader:
+    properties: []
+  GetCashDividendHistoryOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetAllCorporateActionsByExchangeInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetAllCorporateActionsByExchangeHeader:
+    properties: []
+  GetAllCorporateActionsByExchangeOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetCorporateActionHistoryInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetCorporateActionHistoryHeader:
+    properties: []
+  GetCorporateActionHistoryOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  ListSymbolsInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  ListSymbolsHeader:
+    properties: []
+  ListSymbolsOutput:
     properties:
       Envelope:
         description: This is a default description.
@@ -112,933 +386,436 @@ definitions:
       Envelope:
         description: This is a default description.
         type: post
-  ListFutureCategoriesInput:
+  GetGlobalLastClosingPrice_tns:
     properties:
-      Envelope:
+      Identifier:
         description: This is a default description.
         type: post
-  ListFutureCategoriesHeader:
+  GetGlobalLastClosingPriceResponse_tns:
     properties: []
-  ListFutureCategoriesOutput:
+  GetGlobalLastClosingPrices_tns:
     properties:
-      Envelope:
+      Identifiers:
         description: This is a default description.
         type: post
-  ListSwapsInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  ListSwapsHeader:
-    properties: []
-  ListSwapsOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  ListFuturesInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  ListFuturesHeader:
-    properties: []
-  ListFuturesOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  ListFrontMonthContractsInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  ListFrontMonthContractsHeader:
-    properties: []
-  ListFrontMonthContractsOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  ListFuturesByCategoryInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  ListFuturesByCategoryHeader:
-    properties: []
-  ListFuturesByCategoryOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  ListFuturesByExchangeInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  ListFuturesByExchangeHeader:
-    properties: []
-  ListFuturesByExchangeOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  ListSwapsByExchangeInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  ListSwapsByExchangeHeader:
-    properties: []
-  ListSwapsByExchangeOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetDelayedSwapInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetDelayedSwapHeader:
-    properties: []
-  GetDelayedSwapOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetDelayedFutureInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetDelayedFutureHeader:
-    properties: []
-  GetDelayedFutureOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetDelayedFrontFutureInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetDelayedFrontFutureHeader:
-    properties: []
-  GetDelayedFrontFutureOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetAllDelayedFuturesInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetAllDelayedFuturesHeader:
-    properties: []
-  GetAllDelayedFuturesOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetTopDelayedFuturesInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetTopDelayedFuturesHeader:
-    properties: []
-  GetTopDelayedFuturesOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetAllDelayedSwapsInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetAllDelayedSwapsHeader:
-    properties: []
-  GetAllDelayedSwapsOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetDelayedFuturesInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetDelayedFuturesHeader:
-    properties: []
-  GetDelayedFuturesOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetDelayedFutureStripInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetDelayedFutureStripHeader:
-    properties: []
-  GetDelayedFutureStripOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalFutureStripInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalFutureStripHeader:
-    properties: []
-  GetHistoricalFutureStripOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalSwapStripInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalSwapStripHeader:
-    properties: []
-  GetHistoricalSwapStripOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetDelayedSpotInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetDelayedSpotHeader:
-    properties: []
-  GetDelayedSpotOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetDelayedSpotsInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetDelayedSpotsHeader:
-    properties: []
-  GetDelayedSpotsOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetDelayedFutureBySessionInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetDelayedFutureBySessionHeader:
-    properties: []
-  GetDelayedFutureBySessionOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetAllDelayedFuturesBySessionInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetAllDelayedFuturesBySessionHeader:
-    properties: []
-  GetAllDelayedFuturesBySessionOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetDelayedFuturesBySessionInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetDelayedFuturesBySessionHeader:
-    properties: []
-  GetDelayedFuturesBySessionOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalFutureInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalFutureHeader:
-    properties: []
-  GetHistoricalFutureOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalFuturesInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalFuturesHeader:
-    properties: []
-  GetHistoricalFuturesOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetAllHistoricalFuturesWithStatusInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetAllHistoricalFuturesWithStatusHeader:
-    properties: []
-  GetAllHistoricalFuturesWithStatusOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetAllHistoricalFuturesInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetAllHistoricalFuturesHeader:
-    properties: []
-  GetAllHistoricalFuturesOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalFutureRangeInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalFutureRangeHeader:
-    properties: []
-  GetHistoricalFutureRangeOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalSwapInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalSwapHeader:
-    properties: []
-  GetHistoricalSwapOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalSwapRangeInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalSwapRangeHeader:
-    properties: []
-  GetHistoricalSwapRangeOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalSwapsInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalSwapsHeader:
-    properties: []
-  GetHistoricalSwapsOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetAllHistoricalSwapsInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetAllHistoricalSwapsHeader:
-    properties: []
-  GetAllHistoricalSwapsOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalCommodityRangeInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalCommodityRangeHeader:
-    properties: []
-  GetHistoricalCommodityRangeOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalCommodityMonthlyRangeInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalCommodityMonthlyRangeHeader:
-    properties: []
-  GetHistoricalCommodityMonthlyRangeOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalSpotRangeInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalSpotRangeHeader:
-    properties: []
-  GetHistoricalSpotRangeOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalSpotMonthlyRangeInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalSpotMonthlyRangeHeader:
-    properties: []
-  GetHistoricalSpotMonthlyRangeOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetTickInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetTickHeader:
-    properties: []
-  GetTickOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetTicksInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetTicksHeader:
-    properties: []
-  GetTicksOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalTicksInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalTicksHeader:
-    properties: []
-  GetHistoricalTicksOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalTicksAsOfDateInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalTicksAsOfDateHeader:
-    properties: []
-  GetHistoricalTicksAsOfDateOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetIntradayFutureChartInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetIntradayFutureChartHeader:
-    properties: []
-  GetIntradayFutureChartOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetIntradayFutureChartBinaryInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetIntradayFutureChartBinaryHeader:
-    properties: []
-  GetIntradayFutureChartBinaryOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetIntradayFutureChartCustomInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetIntradayFutureChartCustomHeader:
-    properties: []
-  GetIntradayFutureChartCustomOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetIntradayFutureChartCustomBinaryInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetIntradayFutureChartCustomBinaryHeader:
-    properties: []
-  GetIntradayFutureChartCustomBinaryOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalFutureChartInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalFutureChartHeader:
-    properties: []
-  GetHistoricalFutureChartOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalFutureChartBinaryInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalFutureChartBinaryHeader:
-    properties: []
-  GetHistoricalFutureChartBinaryOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalFutureChartCustomInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalFutureChartCustomHeader:
-    properties: []
-  GetHistoricalFutureChartCustomOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalFutureChartCustomBinaryInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalFutureChartCustomBinaryHeader:
+  GetGlobalLastClosingPricesResponse_tns:
     properties: []
-  GetHistoricalFutureChartCustomBinaryOutput:
+  GetGlobalHistoricalQuote_tns:
     properties:
-      Envelope:
+      Identifier:
         description: This is a default description.
         type: post
-  GetHistoricalCommodityChartInput:
-    properties:
-      Envelope:
+      AsOfDate:
         description: This is a default description.
         type: post
-  GetHistoricalCommodityChartHeader:
+  GetGlobalHistoricalQuoteResponse_tns:
     properties: []
-  GetHistoricalCommodityChartOutput:
+  GetEndOfDayQuote_tns:
     properties:
-      Envelope:
+      Identifier:
         description: This is a default description.
         type: post
-  GetHistoricalCommodityChartBinaryInput:
-    properties:
-      Envelope:
+      AsOfDate:
         description: This is a default description.
         type: post
-  GetHistoricalCommodityChartBinaryHeader:
+  GetEndOfDayQuoteResponse_tns:
     properties: []
-  GetHistoricalCommodityChartBinaryOutput:
+  GetEndOfDayQuotes_tns:
     properties:
-      Envelope:
+      Identifiers:
         description: This is a default description.
         type: post
-  GetHistoricalCommodityChartCustomInput:
-    properties:
-      Envelope:
+      AsOfDate:
         description: This is a default description.
         type: post
-  GetHistoricalCommodityChartCustomHeader:
+  GetEndOfDayQuotesResponse_tns:
     properties: []
-  GetHistoricalCommodityChartCustomOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalCommodityChartCustomBinaryInput:
+  GetEndOfDayQuotesRange_tns:
     properties:
-      Envelope:
+      Identifier:
         description: This is a default description.
         type: post
-  GetHistoricalCommodityChartCustomBinaryHeader:
-    properties: []
-  GetHistoricalCommodityChartCustomBinaryOutput:
-    properties:
-      Envelope:
+      StartDate:
         description: This is a default description.
         type: post
-  GetIntradayChartDesignInput:
-    properties:
-      Envelope:
+      EndDate:
         description: This is a default description.
         type: post
-  GetIntradayChartDesignHeader:
+  GetEndOfDayQuotesRangeResponse_tns:
     properties: []
-  GetIntradayChartDesignOutput:
+  GetGlobalHistoricalQuotes_tns:
     properties:
-      Envelope:
+      Identifiers:
         description: This is a default description.
         type: post
-  GetHistoricalChartDesignInput:
-    properties:
-      Envelope:
+      AsOfDate:
         description: This is a default description.
         type: post
-  GetHistoricalChartDesignHeader:
+  GetGlobalHistoricalQuotesResponse_tns:
     properties: []
-  GetHistoricalChartDesignOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetFutureOptionInput:
+  GetGlobalHistoricalQuotesAsOf_tns:
     properties:
-      Envelope:
+      Identifier:
         description: This is a default description.
         type: post
-  GetFutureOptionHeader:
-    properties: []
-  GetFutureOptionOutput:
-    properties:
-      Envelope:
+      EndDate:
         description: This is a default description.
         type: post
-  GetTopIndustryHeadlinesInput:
-    properties:
-      Envelope:
+      Periods:
         description: This is a default description.
         type: post
-  GetTopIndustryHeadlinesHeader:
+  GetGlobalHistoricalQuotesAsOfResponse_tns:
     properties: []
-  GetTopIndustryHeadlinesOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetTodaysIndustryHeadlinesInput:
+  GetGlobalHistoricalQuotesRange_tns:
     properties:
-      Envelope:
+      Identifier:
         description: This is a default description.
         type: post
-  GetTodaysIndustryHeadlinesHeader:
-    properties: []
-  GetTodaysIndustryHeadlinesOutput:
-    properties:
-      Envelope:
+      StartDate:
         description: This is a default description.
         type: post
-  GetLastIndustryHeadlinesInput:
-    properties:
-      Envelope:
+      EndDate:
         description: This is a default description.
         type: post
-  GetLastIndustryHeadlinesHeader:
+  GetGlobalHistoricalQuotesRangeResponse_tns:
     properties: []
-  GetLastIndustryHeadlinesOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetFutureOptionChainInput:
+  GetGlobalHistoricalQuotesRangeExtended_tns:
     properties:
-      Envelope:
+      Identifier:
         description: This is a default description.
         type: post
-  GetFutureOptionChainHeader:
-    properties: []
-  GetFutureOptionChainOutput:
-    properties:
-      Envelope:
+      StartDate:
         description: This is a default description.
         type: post
-  GetFutureOptionsByStrikePriceInput:
-    properties:
-      Envelope:
+      EndDate:
         description: This is a default description.
         type: post
-  GetFutureOptionsByStrikePriceHeader:
+  GetGlobalHistoricalQuotesRangeExtendedResponse_tns:
     properties: []
-  GetFutureOptionsByStrikePriceOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetFutureSymbol_tns:
+  GetGlobalHistoricalWeeklyQuotesRange_tns:
     properties:
-      Symbol:
+      Identifier:
         description: This is a default description.
         type: post
-      Month:
+      StartDate:
         description: This is a default description.
         type: post
-      Year:
+      EndDate:
         description: This is a default description.
         type: post
-  GetFutureSymbolResponse_tns:
+  GetGlobalHistoricalWeeklyQuotesRangeResponse_tns:
     properties: []
-  GetReverseFutureSymbol_tns:
+  GetGlobalHistoricalWeeklyQuotesRangeExtended_tns:
     properties:
-      Symbol:
-        description: This is a default description.
-        type: post
-  GetReverseFutureSymbolResponse_tns:
-    properties: []
-  GetTerminationSchedule_tns:
-    properties:
-      Symbol:
-        description: This is a default description.
-        type: post
-      Month:
+      Identifier:
         description: This is a default description.
         type: post
-      Year:
+      StartDate:
         description: This is a default description.
         type: post
-  GetTerminationScheduleResponse_tns:
-    properties: []
-  GetNextFuture_tns:
-    properties:
-      Symbol:
+      EndDate:
         description: This is a default description.
         type: post
-  GetNextFutureResponse_tns:
+  GetGlobalHistoricalWeeklyQuotesRangeExtendedResponse_tns:
     properties: []
-  GetFuture_tns:
+  GetGlobalHistoricalQuarterlyQuotesRange_tns:
     properties:
-      Symbol:
+      Identifier:
         description: This is a default description.
         type: post
-  GetFutureResponse_tns:
-    properties: []
-  ListExchanges_tns:
-    properties: []
-  ListExchangesResponse_tns:
-    properties: []
-  ListFutureCategories_tns:
-    properties: []
-  ListFutureCategoriesResponse_tns:
-    properties: []
-  ListSwaps_tns:
-    properties: []
-  ListSwapsResponse_tns:
-    properties: []
-  ListFutures_tns:
-    properties: []
-  ListFuturesResponse_tns:
-    properties: []
-  ListFrontMonthContracts_tns:
-    properties: []
-  ListFrontMonthContractsResponse_tns:
-    properties: []
-  ListFuturesByCategory_tns:
-    properties:
-      Category:
+      StartDate:
         description: This is a default description.
         type: post
-  ListFuturesByCategoryResponse_tns:
-    properties: []
-  ListFuturesByExchange_tns:
-    properties:
-      Exchange:
+      EndDate:
         description: This is a default description.
         type: post
-  ListFuturesByExchangeResponse_tns:
+  GetGlobalHistoricalQuarterlyQuotesRangeResponse_tns:
     properties: []
-  ListSwapsByExchange_tns:
+  GetGlobalHistoricalStatistics_tns:
     properties:
-      Exchange:
+      Identifier:
         description: This is a default description.
         type: post
-  ListSwapsByExchangeResponse_tns:
+  GetGlobalHistoricalStatisticsResponse_tns:
     properties: []
-  GetDelayedSwap_tns:
+  GetGlobalHistoricalMonthlyQuotesRange_tns:
     properties:
-      Symbol:
+      Identifier:
         description: This is a default description.
         type: post
-      Month:
+      StartDate:
         description: This is a default description.
         type: post
-      Year:
+      EndDate:
         description: This is a default description.
         type: post
-  GetDelayedSwapResponse_tns:
+  GetGlobalHistoricalMonthlyQuotesRangeResponse_tns:
     properties: []
-  GetDelayedFuture_tns:
+  GetGlobalHistoricalMonthlyQuotesRangeExtended_tns:
     properties:
-      Symbol:
-        description: This is a default description.
-        type: post
-      Month:
+      Identifier:
         description: This is a default description.
         type: post
-      Year:
+      StartDate:
         description: This is a default description.
         type: post
-  GetDelayedFutureResponse_tns:
-    properties: []
-  GetDelayedFrontFuture_tns:
-    properties:
-      Symbol:
-        description: This is a default description.
-        type: post
-  GetDelayedFrontFutureResponse_tns:
-    properties: []
-  GetAllDelayedFutures_tns:
-    properties:
-      Symbol:
+      EndDate:
         description: This is a default description.
         type: post
-  GetAllDelayedFuturesResponse_tns:
+  GetGlobalHistoricalMonthlyQuotesRangeExtendedResponse_tns:
     properties: []
-  GetTopDelayedFutures_tns:
+  GetTopMoversByExchange_tns:
     properties:
-      Symbol:
+      AsOfDate:
         description: This is a default description.
         type: post
       Count:
         description: This is a default description.
         type: post
-  GetTopDelayedFuturesResponse_tns:
+  GetTopMoversByExchangeResponse_tns:
     properties: []
-  GetAllDelayedSwaps_tns:
+  GetTopGainersByExchange_tns:
     properties:
-      Symbol:
-        description: This is a default description.
-        type: post
-  GetAllDelayedSwapsResponse_tns:
-    properties: []
-  GetDelayedFutures_tns:
-    properties:
-      Symbols:
-        description: This is a default description.
-        type: post
-      Month:
-        description: This is a default description.
-        type: post
-      Year:
-        description: This is a default description.
-        type: post
-  GetDelayedFuturesResponse_tns:
-    properties: []
-  GetDelayedFutureStrip_tns:
-    properties:
-      Symbol:
-        description: This is a default description.
-        type: post
-  GetDelayedFutureStripResponse_tns:
-    properties: []
-  GetHistoricalFutureStrip_tns:
-    properties:
-      Symbol:
-        description: This is a default description.
-        type: post
       AsOfDate:
         description: This is a default description.
         type: post
-  GetHistoricalFutureStripResponse_tns:
-    properties: []
-  GetHistoricalSwapStrip_tns:
-    properties:
-      Symbol:
+      Count:
         description: This is a default description.
         type: post
+  GetTopGainersByExchangeResponse_tns:
+    properties: []
+  GetTopLosersByExchange_tns:
+    properties:
       AsOfDate:
         description: This is a default description.
         type: post
-  GetHistoricalSwapStripResponse_tns:
+      Count:
+        description: This is a default description.
+        type: post
+  GetTopLosersByExchangeResponse_tns:
     properties: []
-  GetDelayedSpot_tns:
+  GetAllSplitsByExchange_tns:
+    properties:
+      StartDate:
+        description: This is a default description.
+        type: post
+      EndDate:
+        description: This is a default description.
+        type: post
+  GetAllSplitsByExchangeResponse_tns:
+    properties: []
+  GetSplitRatio_tns:
+    properties:
+      Identifier:
+        description: This is a default description.
+        type: post
+      StartDate:
+        description: This is a default description.
+        type: post
+      EndDate:
+        description: This is a default description.
+        type: post
+  GetSplitRatioResponse_tns:
+    properties: []
+  GetSplitHistory_tns:
+    properties:
+      Identifier:
+        description: This is a default description.
+        type: post
+      StartDate:
+        description: This is a default description.
+        type: post
+      EndDate:
+        description: This is a default description.
+        type: post
+  GetSplitHistoryResponse_tns:
+    properties: []
+  GetAllCashDividendsByExchange_tns:
+    properties:
+      StartDate:
+        description: This is a default description.
+        type: post
+      EndDate:
+        description: This is a default description.
+        type: post
+  GetAllCashDividendsByExchangeResponse_tns:
+    properties: []
+  GetCashDividendTotal_tns:
+    properties:
+      Identifier:
+        description: This is a default description.
+        type: post
+      StartDate:
+        description: This is a default description.
+        type: post
+      EndDate:
+        description: This is a default description.
+        type: post
+  GetCashDividendTotalResponse_tns:
+    properties: []
+  GetCashDividendHistory_tns:
+    properties:
+      Identifier:
+        description: This is a default description.
+        type: post
+      StartDate:
+        description: This is a default description.
+        type: post
+      EndDate:
+        description: This is a default description.
+        type: post
+  GetCashDividendHistoryResponse_tns:
+    properties: []
+  GetAllCorporateActionsByExchange_tns:
+    properties:
+      StartDate:
+        description: This is a default description.
+        type: post
+      EndDate:
+        description: This is a default description.
+        type: post
+  GetAllCorporateActionsByExchangeResponse_tns:
+    properties: []
+  GetCorporateActionHistory_tns:
+    properties:
+      Identifier:
+        description: This is a default description.
+        type: post
+      StartDate:
+        description: This is a default description.
+        type: post
+      EndDate:
+        description: This is a default description.
+        type: post
+  GetCorporateActionHistoryResponse_tns:
+    properties: []
+  ListSymbols_tns:
+    properties:
+      Exchange:
+        description: This is a default description.
+        type: post
+      StartSymbol:
+        description: This is a default description.
+        type: post
+      EndSymbol:
+        description: This is a default description.
+        type: post
+  ListSymbolsResponse_tns:
+    properties: []
+  ListExchanges_tns:
+    properties: []
+  ListExchangesResponse_tns:
+    properties: []
+  Header_tns:
+    properties:
+      Username:
+        description: This is a default description.
+        type: post
+      Password:
+        description: This is a default description.
+        type: post
+      Tracer:
+        description: This is a default description.
+        type: post
+      IHeader_Username:
+        description: This is a default description.
+        type: post
+      IHeader_Password:
+        description: This is a default description.
+        type: post
+      IHeader_Tracer:
+        description: This is a default description.
+        type: post
+  ArrayOfGlobalHistoricalQuote_tns:
+    properties:
+      GlobalHistoricalQuote:
+        description: This is a default description.
+        type: post
+  ArrayOfEndOfDayQuote_tns:
+    properties:
+      EndOfDayQuote:
+        description: This is a default description.
+        type: post
+  ArrayOfGlobalTop_tns:
+    properties:
+      GlobalTop:
+        description: This is a default description.
+        type: post
+  ArrayOfSplitHistory_tns:
+    properties:
+      SplitHistory:
+        description: This is a default description.
+        type: post
+  ArrayOfDividendHistory_tns:
+    properties:
+      DividendHistory:
+        description: This is a default description.
+        type: post
+  ArrayOfCorporateActionHistory_tns:
+    properties:
+      CorporateActionHistory:
+        description: This is a default description.
+        type: post
+  ArrayOfGlobalHistoricalQuoteExtended_tns:
+    properties:
+      GlobalHistoricalQuoteExtended:
+        description: This is a default description.
+        type: post
+  Common_tns:
+    properties:
+      Message:
+        description: This is a default description.
+        type: post
+      Identity:
+        description: This is a default description.
+        type: post
+      Delay:
+        description: This is a default description.
+        type: post
+  ArrayOfSplit_tns:
+    properties:
+      Split:
+        description: This is a default description.
+        type: post
+  ArrayOfDividend_tns:
+    properties:
+      Dividend:
+        description: This is a default description.
+        type: post
+  ArrayOfCorporateAction_tns:
+    properties:
+      CorporateAction:
+        description: This is a default description.
+        type: post
+  ExchangeDescription_tns:
+    properties:
+      MarketIdentificationCode:
+        description: This is a default description.
+        type: post
+      Market:
+        description: This is a default description.
+        type: post
+  ArrayOfSecurityDescription_tns:
+    properties:
+      SecurityDescription:
+        description: This is a default description.
+        type: post
+  ArrayOfExchangeDescription_tns:
+    properties:
+      ExchangeDescription:
+        description: This is a default description.
+        type: post
+  SecurityDescription_tns:
     properties:
       Symbol:
         description: This is a default description.
         type: post
-  GetDelayedSpotResponse_tns:
-    properties: []
-  GetDelayedSpots_tns:
-    properties:
-      Symbols:
+      Name:
         description: This is a default description.
         type: post
-  GetDelayedSpotsResponse_tns:
-    properties: []
-  GetDelayedFutureBySession_tns:
-    properties:
-      Symbol:
+      Currency:
         description: This is a default description.
         type: post
-      Month:
-        description: This is a default description.
-        type: post
-      Year:
-        description: This is a default description.
-        type: post
-  GetDelayedFutureBySessionResponse_tns:
-    properties: []
-  GetAllDelayedFuturesBySession_tns:
-    properties:
-      Symbol:
-        description: This is a default description.
-        type: post
-  GetAllDelayedFuturesBySessionResponse_tns:
-    properties: []
 x-collection-name: Xignite
 x-streamrank:
   polling_total_time_average: 0
