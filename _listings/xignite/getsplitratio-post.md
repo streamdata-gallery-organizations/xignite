@@ -1,11 +1,11 @@
 ---
 swagger: "2.0"
 info:
-  title: Xignite Historical
-  description: This web service provides historical security pricing for US equities.
+  title: Xignite Global Historical
+  description: On-demand global historical quotes.
   version: 1.0.0
 host: www.xignite.com
-basePath: xHistorical.json/XigniteHistorical
+basePath: xGlobalHistorical.json/XigniteGlobalHistorical
 schemes:
 - http
 produces:
@@ -38,266 +38,194 @@ definitions:
       Timestamp:
         description: This is a default description.
         type: post
-  GetHistoricalQuoteAdjustedInput:
+  GetGlobalLastClosingPriceInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetHistoricalQuoteAdjustedHeader:
+  GetGlobalLastClosingPriceHeader:
     properties: []
-  GetHistoricalQuoteAdjustedOutput:
+  GetGlobalLastClosingPriceOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetHistoricalQuotesAdjustedInput:
+  GetGlobalLastClosingPricesInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetHistoricalQuotesAdjustedHeader:
+  GetGlobalLastClosingPricesHeader:
     properties: []
-  GetHistoricalQuotesAdjustedOutput:
+  GetGlobalLastClosingPricesOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetHistoricalMonthlyQuotesRangeAdjustedInput:
+  GetGlobalHistoricalQuoteInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetHistoricalMonthlyQuotesRangeAdjustedHeader:
+  GetGlobalHistoricalQuoteHeader:
     properties: []
-  GetHistoricalMonthlyQuotesRangeAdjustedOutput:
+  GetGlobalHistoricalQuoteOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetHistoricalQuotesAsOfAdjustedInput:
+  GetEndOfDayQuoteInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetHistoricalQuotesAsOfAdjustedHeader:
+  GetEndOfDayQuoteHeader:
     properties: []
-  GetHistoricalQuotesAsOfAdjustedOutput:
+  GetEndOfDayQuoteOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetHistoricalQuotesRangeAdjustedInput:
+  GetEndOfDayQuotesInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetHistoricalQuotesRangeAdjustedHeader:
+  GetEndOfDayQuotesHeader:
     properties: []
-  GetHistoricalQuotesRangeAdjustedOutput:
+  GetEndOfDayQuotesOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetHistoricalWeeklyQuotesRangeAdjustedInput:
+  GetEndOfDayQuotesRangeInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetHistoricalWeeklyQuotesRangeAdjustedHeader:
+  GetEndOfDayQuotesRangeHeader:
     properties: []
-  GetHistoricalWeeklyQuotesRangeAdjustedOutput:
+  GetEndOfDayQuotesRangeOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetHistoricalQuarterlyQuotesRangeAdjustedInput:
+  GetGlobalHistoricalQuotesInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetHistoricalQuarterlyQuotesRangeAdjustedHeader:
+  GetGlobalHistoricalQuotesHeader:
     properties: []
-  GetHistoricalQuarterlyQuotesRangeAdjustedOutput:
+  GetGlobalHistoricalQuotesOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetLastClosingPriceInput:
+  GetGlobalHistoricalQuotesAsOfInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetLastClosingPriceHeader:
+  GetGlobalHistoricalQuotesAsOfHeader:
     properties: []
-  GetLastClosingPriceOutput:
+  GetGlobalHistoricalQuotesAsOfOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetLastClosingPriceAdjustedInput:
+  GetGlobalHistoricalQuotesRangeInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetLastClosingPriceAdjustedHeader:
+  GetGlobalHistoricalQuotesRangeHeader:
     properties: []
-  GetLastClosingPriceAdjustedOutput:
+  GetGlobalHistoricalQuotesRangeOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetLastClosingPricesInput:
+  GetGlobalHistoricalQuotesRangeExtendedInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetLastClosingPricesHeader:
+  GetGlobalHistoricalQuotesRangeExtendedHeader:
     properties: []
-  GetLastClosingPricesOutput:
+  GetGlobalHistoricalQuotesRangeExtendedOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetLastClosingPricesAdjustedInput:
+  GetGlobalHistoricalWeeklyQuotesRangeInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetLastClosingPricesAdjustedHeader:
+  GetGlobalHistoricalWeeklyQuotesRangeHeader:
     properties: []
-  GetLastClosingPricesAdjustedOutput:
+  GetGlobalHistoricalWeeklyQuotesRangeOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetLastClosingPricesOrderedInput:
+  GetGlobalHistoricalWeeklyQuotesRangeExtendedInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetLastClosingPricesOrderedHeader:
+  GetGlobalHistoricalWeeklyQuotesRangeExtendedHeader:
     properties: []
-  GetLastClosingPricesOrderedOutput:
+  GetGlobalHistoricalWeeklyQuotesRangeExtendedOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetLastClosingPricesOrderedAdjustedInput:
+  GetGlobalHistoricalQuarterlyQuotesRangeInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetLastClosingPricesOrderedAdjustedHeader:
+  GetGlobalHistoricalQuarterlyQuotesRangeHeader:
     properties: []
-  GetLastClosingPricesOrderedAdjustedOutput:
+  GetGlobalHistoricalQuarterlyQuotesRangeOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetHistoricalHighLowInput:
+  GetGlobalHistoricalStatisticsInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetHistoricalHighLowHeader:
+  GetGlobalHistoricalStatisticsHeader:
     properties: []
-  GetHistoricalHighLowOutput:
+  GetGlobalHistoricalStatisticsOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetHistoricalQuoteInput:
+  GetGlobalHistoricalMonthlyQuotesRangeInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetHistoricalQuoteHeader:
+  GetGlobalHistoricalMonthlyQuotesRangeHeader:
     properties: []
-  GetHistoricalQuoteOutput:
+  GetGlobalHistoricalMonthlyQuotesRangeOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetHistoricalQuotesInput:
+  GetGlobalHistoricalMonthlyQuotesRangeExtendedInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetHistoricalQuotesHeader:
+  GetGlobalHistoricalMonthlyQuotesRangeExtendedHeader:
     properties: []
-  GetHistoricalQuotesOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalQuotesAsOfInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalQuotesAsOfHeader:
-    properties: []
-  GetHistoricalQuotesAsOfOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalQuotesRangeInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalQuotesRangeHeader:
-    properties: []
-  GetHistoricalQuotesRangeOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalMonthlyQuotesRangeInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalMonthlyQuotesRangeHeader:
-    properties: []
-  GetHistoricalMonthlyQuotesRangeOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalWeeklyQuotesRangeInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalWeeklyQuotesRangeHeader:
-    properties: []
-  GetHistoricalWeeklyQuotesRangeOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalQuarterlyQuotesRangeInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetHistoricalQuarterlyQuotesRangeHeader:
-    properties: []
-  GetHistoricalQuarterlyQuotesRangeOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetTopMoversInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetTopMoversHeader:
-    properties: []
-  GetTopMoversOutput:
+  GetGlobalHistoricalMonthlyQuotesRangeExtendedOutput:
     properties:
       Envelope:
         description: This is a default description.
@@ -314,170 +242,38 @@ definitions:
       Envelope:
         description: This is a default description.
         type: post
-  GetTopGainersInput:
+  GetTopGainersByExchangeInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetTopGainersHeader:
+  GetTopGainersByExchangeHeader:
     properties: []
-  GetTopGainersOutput:
+  GetTopGainersByExchangeOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetTopLosersInput:
+  GetTopLosersByExchangeInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetTopLosersHeader:
+  GetTopLosersByExchangeHeader:
     properties: []
-  GetTopLosersOutput:
+  GetTopLosersByExchangeOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetTopMoversByMarketCapitalizationInput:
+  GetAllSplitsByExchangeInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetTopMoversByMarketCapitalizationHeader:
+  GetAllSplitsByExchangeHeader:
     properties: []
-  GetTopMoversByMarketCapitalizationOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetTopGainersByMarketCapitalizationInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetTopGainersByMarketCapitalizationHeader:
-    properties: []
-  GetTopGainersByMarketCapitalizationOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetTopLosersByMarketCapitalizationInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetTopLosersByMarketCapitalizationHeader:
-    properties: []
-  GetTopLosersByMarketCapitalizationOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetDividendHistoryInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetDividendHistoryHeader:
-    properties: []
-  GetDividendHistoryOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetDividendHistoryRangeInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetDividendHistoryRangeHeader:
-    properties: []
-  GetDividendHistoryRangeOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetExtendedDividendHistoryInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetExtendedDividendHistoryHeader:
-    properties: []
-  GetExtendedDividendHistoryOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetExtendedDividendHistoryRangeInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetExtendedDividendHistoryRangeHeader:
-    properties: []
-  GetExtendedDividendHistoryRangeOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetCompleteDividendHistoryRangeInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetCompleteDividendHistoryRangeHeader:
-    properties: []
-  GetCompleteDividendHistoryRangeOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetSplitHistoryInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetSplitHistoryHeader:
-    properties: []
-  GetSplitHistoryOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetAllSplitsInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetAllSplitsHeader:
-    properties: []
-  GetAllSplitsOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetAllExtendedDividendsInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetAllExtendedDividendsHeader:
-    properties: []
-  GetAllExtendedDividendsOutput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetAllDividendsInput:
-    properties:
-      Envelope:
-        description: This is a default description.
-        type: post
-  GetAllDividendsHeader:
-    properties: []
-  GetAllDividendsOutput:
+  GetAllSplitsByExchangeOutput:
     properties:
       Envelope:
         description: This is a default description.
@@ -494,43 +290,117 @@ definitions:
       Envelope:
         description: This is a default description.
         type: post
-  GetSymbolsInput:
+  GetSplitHistoryInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetSymbolsHeader:
+  GetSplitHistoryHeader:
     properties: []
-  GetSymbolsOutput:
+  GetSplitHistoryOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetAdvancesAndDeclinesInput:
+  GetAllCashDividendsByExchangeInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetAdvancesAndDeclinesHeader:
+  GetAllCashDividendsByExchangeHeader:
     properties: []
-  GetAdvancesAndDeclinesOutput:
+  GetAllCashDividendsByExchangeOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetHistoricalStatisticsInput:
+  GetCashDividendTotalInput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetHistoricalStatisticsHeader:
+  GetCashDividendTotalHeader:
     properties: []
-  GetHistoricalStatisticsOutput:
+  GetCashDividendTotalOutput:
     properties:
       Envelope:
         description: This is a default description.
         type: post
-  GetHistoricalQuoteAdjusted_tns:
+  GetCashDividendHistoryInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetCashDividendHistoryHeader:
+    properties: []
+  GetCashDividendHistoryOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetAllCorporateActionsByExchangeInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetAllCorporateActionsByExchangeHeader:
+    properties: []
+  GetAllCorporateActionsByExchangeOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetCorporateActionHistoryInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetCorporateActionHistoryHeader:
+    properties: []
+  GetCorporateActionHistoryOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  ListSymbolsInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  ListSymbolsHeader:
+    properties: []
+  ListSymbolsOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  ListExchangesInput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  ListExchangesHeader:
+    properties: []
+  ListExchangesOutput:
+    properties:
+      Envelope:
+        description: This is a default description.
+        type: post
+  GetGlobalLastClosingPrice_tns:
+    properties:
+      Identifier:
+        description: This is a default description.
+        type: post
+  GetGlobalLastClosingPriceResponse_tns:
+    properties: []
+  GetGlobalLastClosingPrices_tns:
+    properties:
+      Identifiers:
+        description: This is a default description.
+        type: post
+  GetGlobalLastClosingPricesResponse_tns:
+    properties: []
+  GetGlobalHistoricalQuote_tns:
     properties:
       Identifier:
         description: This is a default description.
@@ -538,9 +408,19 @@ definitions:
       AsOfDate:
         description: This is a default description.
         type: post
-  GetHistoricalQuoteAdjustedResponse_tns:
+  GetGlobalHistoricalQuoteResponse_tns:
     properties: []
-  GetHistoricalQuotesAdjusted_tns:
+  GetEndOfDayQuote_tns:
+    properties:
+      Identifier:
+        description: This is a default description.
+        type: post
+      AsOfDate:
+        description: This is a default description.
+        type: post
+  GetEndOfDayQuoteResponse_tns:
+    properties: []
+  GetEndOfDayQuotes_tns:
     properties:
       Identifiers:
         description: This is a default description.
@@ -548,9 +428,9 @@ definitions:
       AsOfDate:
         description: This is a default description.
         type: post
-  GetHistoricalQuotesAdjustedResponse_tns:
+  GetEndOfDayQuotesResponse_tns:
     properties: []
-  GetHistoricalMonthlyQuotesRangeAdjusted_tns:
+  GetEndOfDayQuotesRange_tns:
     properties:
       Identifier:
         description: This is a default description.
@@ -561,9 +441,19 @@ definitions:
       EndDate:
         description: This is a default description.
         type: post
-  GetHistoricalMonthlyQuotesRangeAdjustedResponse_tns:
+  GetEndOfDayQuotesRangeResponse_tns:
     properties: []
-  GetHistoricalQuotesAsOfAdjusted_tns:
+  GetGlobalHistoricalQuotes_tns:
+    properties:
+      Identifiers:
+        description: This is a default description.
+        type: post
+      AsOfDate:
+        description: This is a default description.
+        type: post
+  GetGlobalHistoricalQuotesResponse_tns:
+    properties: []
+  GetGlobalHistoricalQuotesAsOf_tns:
     properties:
       Identifier:
         description: This is a default description.
@@ -574,9 +464,9 @@ definitions:
       Periods:
         description: This is a default description.
         type: post
-  GetHistoricalQuotesAsOfAdjustedResponse_tns:
+  GetGlobalHistoricalQuotesAsOfResponse_tns:
     properties: []
-  GetHistoricalQuotesRangeAdjusted_tns:
+  GetGlobalHistoricalQuotesRange_tns:
     properties:
       Identifier:
         description: This is a default description.
@@ -587,9 +477,9 @@ definitions:
       EndDate:
         description: This is a default description.
         type: post
-  GetHistoricalQuotesRangeAdjustedResponse_tns:
+  GetGlobalHistoricalQuotesRangeResponse_tns:
     properties: []
-  GetHistoricalWeeklyQuotesRangeAdjusted_tns:
+  GetGlobalHistoricalQuotesRangeExtended_tns:
     properties:
       Identifier:
         description: This is a default description.
@@ -600,9 +490,9 @@ definitions:
       EndDate:
         description: This is a default description.
         type: post
-  GetHistoricalWeeklyQuotesRangeAdjustedResponse_tns:
+  GetGlobalHistoricalQuotesRangeExtendedResponse_tns:
     properties: []
-  GetHistoricalQuarterlyQuotesRangeAdjusted_tns:
+  GetGlobalHistoricalWeeklyQuotesRange_tns:
     properties:
       Identifier:
         description: This is a default description.
@@ -613,51 +503,9 @@ definitions:
       EndDate:
         description: This is a default description.
         type: post
-  GetHistoricalQuarterlyQuotesRangeAdjustedResponse_tns:
+  GetGlobalHistoricalWeeklyQuotesRangeResponse_tns:
     properties: []
-  GetLastClosingPrice_tns:
-    properties:
-      Identifier:
-        description: This is a default description.
-        type: post
-  GetLastClosingPriceResponse_tns:
-    properties: []
-  GetLastClosingPriceAdjusted_tns:
-    properties:
-      Identifier:
-        description: This is a default description.
-        type: post
-  GetLastClosingPriceAdjustedResponse_tns:
-    properties: []
-  GetLastClosingPrices_tns:
-    properties:
-      Identifiers:
-        description: This is a default description.
-        type: post
-  GetLastClosingPricesResponse_tns:
-    properties: []
-  GetLastClosingPricesAdjusted_tns:
-    properties:
-      Identifiers:
-        description: This is a default description.
-        type: post
-  GetLastClosingPricesAdjustedResponse_tns:
-    properties: []
-  GetLastClosingPricesOrdered_tns:
-    properties:
-      Identifiers:
-        description: This is a default description.
-        type: post
-  GetLastClosingPricesOrderedResponse_tns:
-    properties: []
-  GetLastClosingPricesOrderedAdjusted_tns:
-    properties:
-      Identifiers:
-        description: This is a default description.
-        type: post
-  GetLastClosingPricesOrderedAdjustedResponse_tns:
-    properties: []
-  GetHistoricalHighLow_tns:
+  GetGlobalHistoricalWeeklyQuotesRangeExtended_tns:
     properties:
       Identifier:
         description: This is a default description.
@@ -668,42 +516,9 @@ definitions:
       EndDate:
         description: This is a default description.
         type: post
-  GetHistoricalHighLowResponse_tns:
+  GetGlobalHistoricalWeeklyQuotesRangeExtendedResponse_tns:
     properties: []
-  GetHistoricalQuote_tns:
-    properties:
-      Identifier:
-        description: This is a default description.
-        type: post
-      AsOfDate:
-        description: This is a default description.
-        type: post
-  GetHistoricalQuoteResponse_tns:
-    properties: []
-  GetHistoricalQuotes_tns:
-    properties:
-      Identifiers:
-        description: This is a default description.
-        type: post
-      AsOfDate:
-        description: This is a default description.
-        type: post
-  GetHistoricalQuotesResponse_tns:
-    properties: []
-  GetHistoricalQuotesAsOf_tns:
-    properties:
-      Identifier:
-        description: This is a default description.
-        type: post
-      EndDate:
-        description: This is a default description.
-        type: post
-      Periods:
-        description: This is a default description.
-        type: post
-  GetHistoricalQuotesAsOfResponse_tns:
-    properties: []
-  GetHistoricalQuotesRange_tns:
+  GetGlobalHistoricalQuarterlyQuotesRange_tns:
     properties:
       Identifier:
         description: This is a default description.
@@ -714,9 +529,16 @@ definitions:
       EndDate:
         description: This is a default description.
         type: post
-  GetHistoricalQuotesRangeResponse_tns:
+  GetGlobalHistoricalQuarterlyQuotesRangeResponse_tns:
     properties: []
-  GetHistoricalMonthlyQuotesRange_tns:
+  GetGlobalHistoricalStatistics_tns:
+    properties:
+      Identifier:
+        description: This is a default description.
+        type: post
+  GetGlobalHistoricalStatisticsResponse_tns:
+    properties: []
+  GetGlobalHistoricalMonthlyQuotesRange_tns:
     properties:
       Identifier:
         description: This is a default description.
@@ -727,9 +549,9 @@ definitions:
       EndDate:
         description: This is a default description.
         type: post
-  GetHistoricalMonthlyQuotesRangeResponse_tns:
+  GetGlobalHistoricalMonthlyQuotesRangeResponse_tns:
     properties: []
-  GetHistoricalWeeklyQuotesRange_tns:
+  GetGlobalHistoricalMonthlyQuotesRangeExtended_tns:
     properties:
       Identifier:
         description: This is a default description.
@@ -740,30 +562,7 @@ definitions:
       EndDate:
         description: This is a default description.
         type: post
-  GetHistoricalWeeklyQuotesRangeResponse_tns:
-    properties: []
-  GetHistoricalQuarterlyQuotesRange_tns:
-    properties:
-      Identifier:
-        description: This is a default description.
-        type: post
-      StartDate:
-        description: This is a default description.
-        type: post
-      EndDate:
-        description: This is a default description.
-        type: post
-  GetHistoricalQuarterlyQuotesRangeResponse_tns:
-    properties: []
-  GetTopMovers_tns:
-    properties:
-      AsOfDate:
-        description: This is a default description.
-        type: post
-      Count:
-        description: This is a default description.
-        type: post
-  GetTopMoversResponse_tns:
+  GetGlobalHistoricalMonthlyQuotesRangeExtendedResponse_tns:
     properties: []
   GetTopMoversByExchange_tns:
     properties:
@@ -775,7 +574,7 @@ definitions:
         type: post
   GetTopMoversByExchangeResponse_tns:
     properties: []
-  GetTopGainers_tns:
+  GetTopGainersByExchange_tns:
     properties:
       AsOfDate:
         description: This is a default description.
@@ -783,9 +582,9 @@ definitions:
       Count:
         description: This is a default description.
         type: post
-  GetTopGainersResponse_tns:
+  GetTopGainersByExchangeResponse_tns:
     properties: []
-  GetTopLosers_tns:
+  GetTopLosersByExchange_tns:
     properties:
       AsOfDate:
         description: This is a default description.
@@ -793,123 +592,9 @@ definitions:
       Count:
         description: This is a default description.
         type: post
-  GetTopLosersResponse_tns:
+  GetTopLosersByExchangeResponse_tns:
     properties: []
-  GetTopMoversByMarketCapitalization_tns:
-    properties:
-      AsOfDate:
-        description: This is a default description.
-        type: post
-      LowCapitalization:
-        description: This is a default description.
-        type: post
-      HighCapitalization:
-        description: This is a default description.
-        type: post
-      Count:
-        description: This is a default description.
-        type: post
-  GetTopMoversByMarketCapitalizationResponse_tns:
-    properties: []
-  GetTopGainersByMarketCapitalization_tns:
-    properties:
-      AsOfDate:
-        description: This is a default description.
-        type: post
-      LowCapitalization:
-        description: This is a default description.
-        type: post
-      HighCapitalization:
-        description: This is a default description.
-        type: post
-      Count:
-        description: This is a default description.
-        type: post
-  GetTopGainersByMarketCapitalizationResponse_tns:
-    properties: []
-  GetTopLosersByMarketCapitalization_tns:
-    properties:
-      AsOfDate:
-        description: This is a default description.
-        type: post
-      LowCapitalization:
-        description: This is a default description.
-        type: post
-      HighCapitalization:
-        description: This is a default description.
-        type: post
-      Count:
-        description: This is a default description.
-        type: post
-  GetTopLosersByMarketCapitalizationResponse_tns:
-    properties: []
-  GetDividendHistory_tns:
-    properties:
-      Identifier:
-        description: This is a default description.
-        type: post
-  GetDividendHistoryResponse_tns:
-    properties: []
-  GetDividendHistoryRange_tns:
-    properties:
-      Identifier:
-        description: This is a default description.
-        type: post
-      StartDate:
-        description: This is a default description.
-        type: post
-      EndDate:
-        description: This is a default description.
-        type: post
-  GetDividendHistoryRangeResponse_tns:
-    properties: []
-  GetExtendedDividendHistory_tns:
-    properties:
-      Identifier:
-        description: This is a default description.
-        type: post
-  GetExtendedDividendHistoryResponse_tns:
-    properties: []
-  GetExtendedDividendHistoryRange_tns:
-    properties:
-      Identifier:
-        description: This is a default description.
-        type: post
-      StartDate:
-        description: This is a default description.
-        type: post
-      EndDate:
-        description: This is a default description.
-        type: post
-  GetExtendedDividendHistoryRangeResponse_tns:
-    properties: []
-  GetCompleteDividendHistoryRange_tns:
-    properties:
-      Identifier:
-        description: This is a default description.
-        type: post
-      StartDate:
-        description: This is a default description.
-        type: post
-      EndDate:
-        description: This is a default description.
-        type: post
-  GetCompleteDividendHistoryRangeResponse_tns:
-    properties: []
-  GetSplitHistory_tns:
-    properties:
-      Identifier:
-        description: This is a default description.
-        type: post
-      StartDate:
-        description: This is a default description.
-        type: post
-      EndDate:
-        description: This is a default description.
-        type: post
-  GetSplitHistoryResponse_tns:
-    properties: []
-  GetAllSplits_tns:
+  GetAllSplitsByExchange_tns:
     properties:
       StartDate:
         description: This is a default description.
@@ -917,27 +602,7 @@ definitions:
       EndDate:
         description: This is a default description.
         type: post
-  GetAllSplitsResponse_tns:
-    properties: []
-  GetAllExtendedDividends_tns:
-    properties:
-      StartDate:
-        description: This is a default description.
-        type: post
-      EndDate:
-        description: This is a default description.
-        type: post
-  GetAllExtendedDividendsResponse_tns:
-    properties: []
-  GetAllDividends_tns:
-    properties:
-      StartDate:
-        description: This is a default description.
-        type: post
-      EndDate:
-        description: This is a default description.
-        type: post
-  GetAllDividendsResponse_tns:
+  GetAllSplitsByExchangeResponse_tns:
     properties: []
   GetSplitRatio_tns:
     properties:
@@ -952,23 +617,94 @@ definitions:
         type: post
   GetSplitRatioResponse_tns:
     properties: []
-  GetSymbols_tns:
-    properties: []
-  GetSymbolsResponse_tns:
-    properties: []
-  GetAdvancesAndDeclines_tns:
-    properties:
-      AsOfDate:
-        description: This is a default description.
-        type: post
-  GetAdvancesAndDeclinesResponse_tns:
-    properties: []
-  GetHistoricalStatistics_tns:
+  GetSplitHistory_tns:
     properties:
       Identifier:
         description: This is a default description.
         type: post
-  GetHistoricalStatisticsResponse_tns:
+      StartDate:
+        description: This is a default description.
+        type: post
+      EndDate:
+        description: This is a default description.
+        type: post
+  GetSplitHistoryResponse_tns:
+    properties: []
+  GetAllCashDividendsByExchange_tns:
+    properties:
+      StartDate:
+        description: This is a default description.
+        type: post
+      EndDate:
+        description: This is a default description.
+        type: post
+  GetAllCashDividendsByExchangeResponse_tns:
+    properties: []
+  GetCashDividendTotal_tns:
+    properties:
+      Identifier:
+        description: This is a default description.
+        type: post
+      StartDate:
+        description: This is a default description.
+        type: post
+      EndDate:
+        description: This is a default description.
+        type: post
+  GetCashDividendTotalResponse_tns:
+    properties: []
+  GetCashDividendHistory_tns:
+    properties:
+      Identifier:
+        description: This is a default description.
+        type: post
+      StartDate:
+        description: This is a default description.
+        type: post
+      EndDate:
+        description: This is a default description.
+        type: post
+  GetCashDividendHistoryResponse_tns:
+    properties: []
+  GetAllCorporateActionsByExchange_tns:
+    properties:
+      StartDate:
+        description: This is a default description.
+        type: post
+      EndDate:
+        description: This is a default description.
+        type: post
+  GetAllCorporateActionsByExchangeResponse_tns:
+    properties: []
+  GetCorporateActionHistory_tns:
+    properties:
+      Identifier:
+        description: This is a default description.
+        type: post
+      StartDate:
+        description: This is a default description.
+        type: post
+      EndDate:
+        description: This is a default description.
+        type: post
+  GetCorporateActionHistoryResponse_tns:
+    properties: []
+  ListSymbols_tns:
+    properties:
+      Exchange:
+        description: This is a default description.
+        type: post
+      StartSymbol:
+        description: This is a default description.
+        type: post
+      EndSymbol:
+        description: This is a default description.
+        type: post
+  ListSymbolsResponse_tns:
+    properties: []
+  ListExchanges_tns:
+    properties: []
+  ListExchangesResponse_tns:
     properties: []
   Header_tns:
     properties:
@@ -990,24 +726,39 @@ definitions:
       IHeader_Tracer:
         description: This is a default description.
         type: post
-  ArrayOfHistoricalQuote_tns:
+  ArrayOfGlobalHistoricalQuote_tns:
     properties:
-      HistoricalQuote:
+      GlobalHistoricalQuote:
         description: This is a default description.
         type: post
-  ArrayOfTop_tns:
+  ArrayOfEndOfDayQuote_tns:
     properties:
-      Top:
+      EndOfDayQuote:
         description: This is a default description.
         type: post
-  ArrayOfTopByCapitalization_tns:
+  ArrayOfGlobalTop_tns:
     properties:
-      TopByCapitalization:
+      GlobalTop:
         description: This is a default description.
         type: post
   ArrayOfSplitHistory_tns:
     properties:
       SplitHistory:
+        description: This is a default description.
+        type: post
+  ArrayOfDividendHistory_tns:
+    properties:
+      DividendHistory:
+        description: This is a default description.
+        type: post
+  ArrayOfCorporateActionHistory_tns:
+    properties:
+      CorporateActionHistory:
+        description: This is a default description.
+        type: post
+  ArrayOfGlobalHistoricalQuoteExtended_tns:
+    properties:
+      GlobalHistoricalQuoteExtended:
         description: This is a default description.
         type: post
   Common_tns:
@@ -1021,111 +772,48 @@ definitions:
       Delay:
         description: This is a default description.
         type: post
-  ArrayOfDividend_tns:
-    properties:
-      Dividend:
-        description: This is a default description.
-        type: post
-  ArrayOfExtendedDividend_tns:
-    properties:
-      ExtendedDividend:
-        description: This is a default description.
-        type: post
-  ArrayOfCompleteDividend_tns:
-    properties:
-      CompleteDividend:
-        description: This is a default description.
-        type: post
   ArrayOfSplit_tns:
     properties:
       Split:
         description: This is a default description.
         type: post
-  ArrayOfString_tns:
+  ArrayOfDividend_tns:
     properties:
-      string:
+      Dividend:
         description: This is a default description.
         type: post
-  ArrayOfMarketChange_tns:
+  ArrayOfCorporateAction_tns:
     properties:
-      MarketChange:
+      CorporateAction:
         description: This is a default description.
         type: post
-  ExtendedDividend_tns:
+  ExchangeDescription_tns:
     properties:
-      Symbol:
+      MarketIdentificationCode:
         description: This is a default description.
         type: post
-      ExDate:
+      Market:
         description: This is a default description.
         type: post
-      RecordDate:
+  ArrayOfSecurityDescription_tns:
+    properties:
+      SecurityDescription:
         description: This is a default description.
         type: post
-      PayDate:
+  ArrayOfExchangeDescription_tns:
+    properties:
+      ExchangeDescription:
         description: This is a default description.
         type: post
-      Amount:
-        description: This is a default description.
-        type: post
-      Yield:
-        description: This is a default description.
-        type: post
-  CompleteDividend_tns:
+  SecurityDescription_tns:
     properties:
       Symbol:
         description: This is a default description.
         type: post
-      ExDate:
-        description: This is a default description.
-        type: post
-      RecordDate:
-        description: This is a default description.
-        type: post
-      PayDate:
-        description: This is a default description.
-        type: post
-      Amount:
-        description: This is a default description.
-        type: post
-      Yield:
+      Name:
         description: This is a default description.
         type: post
       Currency:
-        description: This is a default description.
-        type: post
-      Type:
-        description: This is a default description.
-        type: post
-      Code:
-        description: This is a default description.
-        type: post
-      PaymentFrequency:
-        description: This is a default description.
-        type: post
-  Split_tns:
-    properties:
-      Date:
-        description: This is a default description.
-        type: post
-      Ratio:
-        description: This is a default description.
-        type: post
-      CumulatedRatio:
-        description: This is a default description.
-        type: post
-      Text:
-        description: This is a default description.
-        type: post
-  MarketChange_tns:
-    properties:
-      Exchange:
-        description: This is a default description.
-        type: post
-      Type:
-        description: This is a default description.
-        type: post
-      Count:
         description: This is a default description.
         type: post
 x-collection-name: Xignite
